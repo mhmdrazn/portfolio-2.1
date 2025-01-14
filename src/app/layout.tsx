@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
-import localFont from "next/font/local";
 import "./globals.css";
 
 const figtree = Figtree({
@@ -9,8 +8,8 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Razan | Hipster",
-  description: "UI/UX Designer and Junior Front-End Developer",
+  title: "Hola Razan!",
+  description: "UI/UX and Product Designer",
 };
 
 export default function RootLayout({
