@@ -1,5 +1,5 @@
 import { Linkedin } from 'lucide-react';
-import { IconBrandBehance, IconBrandInstagram, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime } from '@tabler/icons-react';
+import { IconBrandBehance, IconSignature, IconBrandInstagram, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime } from '@tabler/icons-react';
 
 export const LinkedinIcon = () => {
     return (
@@ -58,5 +58,11 @@ export const BehanceIcon = () => {
 export const InstagramIcon = () => {
     return (
         <IconBrandInstagram stroke={1} width={27} height={27}/>
+    )
+}
+
+export const SignatureIcon = () => {
+    return (
+        <IconSignature stroke={1} className='h-full w-full'/>
     )
 }

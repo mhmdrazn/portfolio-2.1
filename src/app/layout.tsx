@@ -5,6 +5,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster"
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { dock } from "@/lib/data";
+import Footer from "@/components/footer";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
         >
           <FloatingDock items={dock} />
         </div>
+        <Footer/>
       </body>
     </html>
   );

@@ -1,14 +1,12 @@
 "use client"
 
-import Footer from "@/components/navbar";
-import HomePage from "@/app/pages/home";
+import HomePage from "@/app/home";
 
 export default function Home() {
   return (
     
     <main className="bg-dark w-full h-full">
-      <HomePage/>
-      <Footer/>
+      <HomePage/> 
     </main>
   );
 }

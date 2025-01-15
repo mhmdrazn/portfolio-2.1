@@ -1,4 +1,4 @@
-import { LinkedinIcon, GithubIcon, BehanceIcon, InstagramIcon, HomeIcon, ProjectIcon, MeIcon, RetrosIcon, JourneyIcon } from '@/components/ui/icons';
+import { LinkedinIcon, GithubIcon, SignatureIcon, BehanceIcon, InstagramIcon, HomeIcon, ProjectIcon, MeIcon, RetrosIcon, JourneyIcon } from '@/components/ui/icons';
 
 export const socialLinks = [
     {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIcon/>},
@@ -49,6 +49,13 @@ export const dock = [
             <RetrosIcon/>
         ),
         href: "/retro",
+    },
+    {
+        title: "Guestbook",
+        icon: (
+            <SignatureIcon/>
+        ),
+        href: "/guest",
     },
     {
         title: "Meet with me",
