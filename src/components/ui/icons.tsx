@@ -1,10 +1,5 @@
-import Image from "next/image";
-
-import { IconBrandGithub } from '@tabler/icons-react';
-import { IconMail } from '@tabler/icons-react'; 
 import { Linkedin } from 'lucide-react';
-import { IconBrandInstagram } from '@tabler/icons-react';
-import { IconBrandBehance } from '@tabler/icons-react';
+import { IconBrandBehance, IconBrandInstagram, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime } from '@tabler/icons-react';
 
 export const LinkedinIcon = () => {
     return (
@@ -12,9 +7,39 @@ export const LinkedinIcon = () => {
     )
 }
 
+export const HomeIcon = () => {
+    return (
+        <IconSmartHome stroke={1} className='h-full w-full'/>
+    )
+}
+
+export const ProjectIcon = () => {
+    return (
+        <IconCategory2 strokeWidth={1} className='h-full w-full'/>
+    ) 
+}
+
+export const JourneyIcon = () => {
+    return (
+        <IconCarouselHorizontal stroke={1} width={32} height={32} className='h-full w-full'/>
+    )
+}
+
+export const RetrosIcon = () => {
+    return (
+        <IconNotebook strokeWidth={1} className='h-full w-full'/>
+    )
+}
+
 export const GithubIcon = () => {
     return (
         <IconBrandGithub stroke={1.25} />
+    )
+}
+
+export const MeIcon = () => {
+    return (
+        <IconCalendarTime strokeWidth={1.25} className='h-full w-full'/>
     )
 }
 

@@ -1,4 +1,4 @@
-import { LinkedinIcon, GithubIcon, BehanceIcon, InstagramIcon } from '@/components/ui/icons';
+import { LinkedinIcon, GithubIcon, BehanceIcon, InstagramIcon, HomeIcon, ProjectIcon, MeIcon, RetrosIcon, JourneyIcon } from '@/components/ui/icons';
 
 export const socialLinks = [
     {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIcon/>},
@@ -20,3 +20,41 @@ export const quickLinks = [
     {href: "/projects", label: "Featured Projects"},
     {href: "/retros", label: "Retrospective"},
 ]
+
+export const dock = [
+    {
+        title: "Home",
+        icon: (
+            <HomeIcon />
+        ),
+        href: "/",
+    },
+    {
+        title: "Journey",
+        icon: (
+            <JourneyIcon/>
+        ),
+        href: "/journey",
+    },
+    {
+        title: "Projects",
+        icon: (
+            <ProjectIcon/>
+        ),
+        href: "/projects",
+    },
+    {
+        title: "Retrospective",
+        icon: (
+            <RetrosIcon/>
+        ),
+        href: "/retro",
+    },
+    {
+        title: "Meet with me",
+        icon: (
+            <MeIcon/>
+        ),
+        href: "https://cal.com/hola-razan",
+    },
+];

@@ -12,7 +12,7 @@ import { MailIcon } from './ui/icons';
 export default function Footer() {
     const { toast } = useToast();
     return (
-        <footer className='flex w-full h-fit px-4 py-12 md:px-8 lg:px-16 justify-center items-center bg-dark'>
+        <footer className='flex w-full h-fit px-4 pt-12 md:pb-32 md:px-8 lg:px-16 justify-center items-center bg-dark'>
             <div className='flex flex-col max-w-3xl w-full gap-4 justify-between'>
                 <div className='flex flex-col md:flex-row md:justify-between justify-center items-center gap-6 md:gap-0 pw-full'>
                     <Image src='/mark.svg' alt='logo' width={60} height={42.06}/>
@@ -30,7 +30,7 @@ export default function Footer() {
                         </button>
 
                         {socialLinks.map((maps, index) => (
-                            <Link href={maps.href} className='size-fit'>
+                            <Link key={index} href={maps.href} className='size-fit'>
                                 {maps.icon}
                             </Link>
                         ))}
@@ -53,7 +53,7 @@ export default function Footer() {
                             <p className='font-medium'>Actions</p>
                             <div className='flex flex-col justify-center items-center md:justify-end md:items-end gap-2'>
                                 {action.map((maps, index) => (
-                                    <Link href={maps.href} className="anim text-sm text-white/40 hover:text-white">
+                                    <Link key={index} href={maps.href} className="anim text-sm text-white/40 hover:text-white">
                                         {maps.label}
                                     </Link>
                                 ))}
@@ -63,7 +63,7 @@ export default function Footer() {
                             <p className='font-medium'>Quick Links</p>
                             <div className='flex flex-col justify-center items-center md:justify-end md:items-end gap-2'>
                                 {quickLinks.map((maps, index) => (
-                                    <Link href={maps.href} className="anim text-sm text-white/40 hover:text-white">
+                                    <Link key={index} href={maps.href} className="anim text-sm text-white/40 hover:text-white">
                                         {maps.label}
                                     </Link>
                                 ))}
