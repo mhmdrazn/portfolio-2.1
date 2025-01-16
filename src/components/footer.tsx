@@ -12,7 +12,7 @@ import { MailIcon } from './ui/icons';
 export default function Footer() {
     const { toast } = useToast();
     return (
-        <footer className='flex w-full h-fit px-4 pt-12 md:pb-32 md:px-8 lg:px-16 justify-center items-center bg-dark'>
+        <footer className='flex w-full h-fit px-4 pt-12 md:pb-32 md:px-8 lg:px-16 justify-center items-center bg-foreground'>
             <div className='flex flex-col max-w-3xl w-full gap-4 justify-between'>
                 <div className='flex flex-col md:flex-row md:justify-between justify-center items-center gap-6 md:gap-0 pw-full'>
                     <Image src='/mark.svg' alt='logo' width={60} height={42.06}/>

@@ -23,7 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressContentEditableWarning className="scroll-smooth">
+    <html lang="en" suppressContentEditableWarning 
+    className="
+      scroll-smooth overflow-y-auto [&::-webkit-scrollbar]:w-0">
       <body className={figtree.className}>
         {children}
         <Toaster />
