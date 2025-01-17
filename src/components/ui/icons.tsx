@@ -1,4 +1,4 @@
-import { Linkedin } from 'lucide-react';
+import { Linkedin, MoveRight } from 'lucide-react';
 import { IconBrandBehance, IconSignature, IconBrandInstagram, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime } from '@tabler/icons-react';
 
 export const LinkedinIcon = () => {
@@ -64,5 +64,11 @@ export const InstagramIcon = () => {
 export const SignatureIcon = () => {
     return (
         <IconSignature stroke={1} className='h-full w-full'/>
+    )
+}
+
+export const ArrowIcon = () => {
+    return (
+        <MoveRight strokeWidth={1} className='h-full w-full'/>
     )
 }

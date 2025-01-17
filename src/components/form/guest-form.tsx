@@ -1,10 +1,9 @@
 import React from 'react'
 
 import Image from 'next/image'
-
 import { Button } from '../ui/button'
-import { Textarea } from '../ui/textarea'
 import { User } from '@supabase/supabase-js'
+import { Textarea } from "@/components/ui/textarea"
 
 const login = [
     {
@@ -25,9 +24,12 @@ const GuestForm = ({ user } : {user: User | null}) => {
     return (    
         <div className='felx flex-col gap-4 h-fit pt-4 max-w-2xl w-full'>
             {user ? 
-                <div>
+                <div className='flex flex-col gap-3 items-end w-full'>
                     <Textarea placeholder='Your message' className='w-full h-fit'/>
-                </div> 
+                    <Button className='w-fit h-fit'>
+                        Submit
+                    </Button>
+                </div>
                     :
                 <div className='flex flex-row md:flex-row md:gap-6 gap-2 w-full'>
                     {login.map((provider, index) => (   
