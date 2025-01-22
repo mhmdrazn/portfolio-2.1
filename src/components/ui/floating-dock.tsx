@@ -53,14 +53,14 @@ const FloatingDockMobile = ({
                     animate={{
                     opacity: 1,
                     y: 0,
-                    }}
+                }}
                     exit={{
                     opacity: 0,
                     y: 10,
                     transition: {
                         delay: idx * 0.05,
                     },
-                    }}
+        }}
                     transition={{ delay: (items.length - 1 - idx) * 0.05 }}
                 >
                     <Link
@@ -176,7 +176,7 @@ const [hovered, setHovered] = useState(false);
                 initial={{ opacity: 0, y: 10, x: "-50%" }}
                 animate={{ opacity: 1, y: 0, x: "-50%" }}
                 exit={{ opacity: 0, y: 2, x: "-50%" }}
-                className="px-2 py-0.5 whitespace-pre rounded-md border bg-neutral-800 border-neutral-900 text-light absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
+                className="px-2 py-0.5 whitespace-pre rounded-md border bg-neutral-800 border-neutral-900 text-foreground absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
                 >
                 {title}
                 </motion.div>

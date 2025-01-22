@@ -31,7 +31,7 @@ const GuestForm = ({ user } : {user: User | null}) => {
                             Submit
                         </Button>
                         <form action={signout}>
-                            <Button type="submit" variant="outline">Sign Out</Button>
+                            <Button type="submit" variant="secondary">Sign Out</Button>
                         </form>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const GuestForm = ({ user } : {user: User | null}) => {
                 <div className='flex flex-row md:flex-row md:gap-6 gap-2 w-full'>
                     {login.map((provider) => (   
                         <form key={provider.providers} action={provider.action} className='w-full'>
-                            <Button type='submit' variant='secondary' className='w-full gap-3'>
+                            <Button type='submit' variant="secondary" className='w-full gap-3'>
                                 <Image
                                     src={provider.icon}
                                     alt={provider.providers}

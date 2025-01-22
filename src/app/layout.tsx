@@ -5,7 +5,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster"
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { dock } from "@/lib/data";
-import Footer from "@/components/footer";
+import Footer from "@/components/sections/footer";
 
 const figtree = Figtree({
   subsets: ["latin"],
