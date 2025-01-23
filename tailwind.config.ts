@@ -53,6 +53,10 @@ const config: Config = {
 					'5': 'hsl(var(--chart-5))'
 				}
 			},
+			fontFamily: {
+				figtree: ['Figtree', 'sans-serif'],
+				lora: ['Lora', 'sans-serif'],
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -70,6 +74,6 @@ const config: Config = {
 			},
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require("tailwindcss-inner-border"),],
 };
 export default config;
