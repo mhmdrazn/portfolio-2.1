@@ -1,4 +1,4 @@
-import { Linkedin, MoveRight, Sun, Moon } from 'lucide-react';
+import { Linkedin, Sun, Moon, ArrowUpRight, MoveRight  } from 'lucide-react';
 import { IconBrandBehance, IconSignature, IconBrandInstagram, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime } from '@tabler/icons-react';
 
 export const LinkedinIcon = () => {
@@ -82,5 +82,17 @@ export const SunIcon = () => {
 export const MoonIcon = () => {
     return (
         <Moon strokeWidth={1} className='h-full w-full'/>
+    )
+}
+
+export const ArrowUpIcon = () => {
+    return (
+        <ArrowUpRight strokeWidth={2} width={28} height={28}/>
+    )
+}
+
+export const ArrowRightIcon = () => {
+    return (
+        <MoveRight strokeWidth={2} width={28} height={28}/>
     )
 }

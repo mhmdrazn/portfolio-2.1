@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function NotFound() {
     return (
-        <div className='w-full h-screen flex flex-col gap-6 justify-center items-center text-foreground bg-background'>
+        <div className='w-full h-screen flex flex-col gap-6 justify-center items-center'>
             <h1 className='text-bold text-5xl font-bold'>
                 404
             </h1>
