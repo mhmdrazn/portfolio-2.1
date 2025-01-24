@@ -72,14 +72,14 @@ export const experiences = [
     {
         position: "UI/UX Designer",
         company: "Beta U",
-        date: "June 2024 - Now",
+        date: "Jun 2024 - Now",
         link: "https://www.linkedin.com/company/beta-u",
         description : "BETA U is a dynamic Software House specializing in transforming ideas into Minimum Viable Products (MVPs) swiftly and creatively. With a keen understanding of project intricacies, BETA U collaborates closely with clients to bring their visions to life.",
         img: "/exp/betaulogo.svg",
         job: [
-            "- Designing and implementing user-friendly interfaces for web and mobile applications.",
-            "- Collaborating with cross-functional teams to gather requirements and translate them into intuitive designs.",
-            "- Conducting user research and testing to ensure the designs meet user needs and preferences.",
+            "Designing and implementing user-friendly interfaces for web and mobile applications.",
+            "Collaborating with cross-functional teams to gather requirements and translate them into intuitive designs.",
+            "Conducting user research and testing to ensure the designs meet user needs and preferences.",
         ]
     },
     {
@@ -88,56 +88,78 @@ export const experiences = [
         date: "Jan 2024 - Now",
         link: "https://www.linkedin.com/company/ajakgerak",
         description : "Ajak Gerak educational platform that provides academic training and self-development services for high school students who want to continue their studies at dream colleges, especially those who don't have the facilities and students in disadvantaged areas.",
-        img: "/exp/ajakgerak.jpeg"
+        img: "/exp/ajakgerak.jpeg",
+        job: [
+            "Led the management and delivery of product outputs at AjakGerak", 
+            "Managed the Beasiswa #GerakBerdampak program, successfully overseeing 900+ applicants and empowering high school and gap year students to achieve their university aspirations.",
+            "Designed AjakGerak’s Instagram content, creating engaging campaigns aligned with the organization’s mission."
+        ]
     },
     {
         position: "Lead UI/UX Designer",
         company: "TEDxITS",
         date: "Jan 2024 - Now",
-        link: "https://www.linkedin.com/company/tedxits",
+        link: "https://www.tedxits.org/",
         description : "TEDxITS 2024 is an event that provides a platform for the community, especially those within the ITS environment, to share their compelling ideas. The aim of this event is to disseminate ideas and concepts about new and previously unexplored topics. Our goal is to ignite discussions, foster connections, and build a sense of community.",
         img: "/exp/tedx.svg",
         job: [
-            "- Designed TEDxITS 2025 website, managing comprehensive development and user experience",
-            "- Led design team of six, collaborating with frontend developers and visual designers",
-            "- Streamlined design workflows to maintain project timelines and TEDxITS goals",
+            "Designed TEDxITS 2025 website, managing comprehensive development and user experience",
+            "Led design team of six, collaborating with frontend developers and visual designers",
+            "Streamlined design workflows to maintain project timelines and TEDxITS goals",
         ]
     },
     {
         position: "Lead UI/UX Designer",
         company: "Futurest",
         date: "Oct 2024 - Now",
-        link: "https://www.linkedin.com/company/futurest",
+        link: "https://www.futurest.id/",
         description : "FUTUREST (Future Energy Summit) stands as Indonesia's grand stage for renewable energy, orchestrated by SRE ITS, igniting students passion across the nation to pioneer energy transformation through innovative exploration and strategic implementation.",
         img: "/exp/futurest.svg",
         job: [
-            "- Led UI/UX design for Futurest 2025, managing workflow and six-designer team",
-            "- Conducted detailed design reviews ensuring quality outputs and project objectives",
-            "- Oversaw Futurest website design to create a user-friendly and impactful platform",
+            "Led UI/UX design for Futurest 2025, managing workflow and six-designer team",
+            "Conducted detailed design reviews ensuring quality outputs and project objectives",
+            "Conducting user research and testing to ensure the designs meet user needs and preferences.",
         ]
     },
     {
         position: "UI/UX Designer",
         company: "SRE ITS",
         date: "Jun 2024 - Now",
-        link: "https://www.linkedin.com/company/sreits",
+        link: "https://www.sre-its.com/",
         description : "SRE ITS SC serves as an international-based renewable energy community that unites implementation, professional management competencies, contributes significantly to developing, and implementing sustainable renewable energy.",
-        img: "/exp/sre.svg"
+        img: "/exp/sre.svg",
+        job: [
+            "Contributed to the redesign of the SRE ITS website, enhancing UX with a more intuitive and engaging interface.",
+            "Designed new features to improve the website's sustainability, ensuring alignment with user needs and goals.",
+            "Worked closely with the team to create a cohesive and effective digital experience."
+        ]
     },
     {
         position: "UI/UX Designer",
         company: "Ini Lho ITS",
         date: "Apr 2024 - Des 24",
-        link: "https://www.linkedin.com/company/inilhoits",
-        description : "TEDxITS 2024 is an event that provides a platform for the community, especially those within the ITS environment, to share their compelling ideas. The aim of this event is to disseminate ideas and concepts about new and previously unexplored topics. Our goal is to ignite discussions, foster connections, and build a sense of community.",
-        img: "/exp/ilits.svg"
+        link: "https://www.ini.lho.its.ac.id/",
+        description : "Ini Lho ITS! is a platform that introduces Institut Teknologi Sepuluh Nopember, providing insights into its academic life and faculties to high school students across Indonesia and beyond.",
+        img: "/exp/ilits.svg",
+        job: [
+            "Played a key role in designing and refining user interfaces for Ini Lho ITS 2025.",
+            "Translated project requirements into effective design solutions, maintaining consistency with the overall theme.",
+            "Collaborated closely with the team to align design elements with project objectives.",
+            "Supported frontend developers to ensure accurate implementation and functionality.",
+        ]
     },
     {
         position: "UI/UX Designer",
         company: "ISE!",
         date: "Jun - Oct 2024",
-        link: "https://www.linkedin.com/company/information-systems-expo-ise-2024/",
+        link: "https://www.ise-its.com/",
         description : "Information Systems Expo (ISE!) is an annual event organized by the Himpunan Mahasiswa Sistem Informasi (HMSI) which consists of a series of events in the fields of technology and business. ISE! aims to introduce the ITS Information Systems Department to the wider community through various works and achievements.",
-        img: "/exp/ise.svg"
+        img: "/exp/ise.svg",
+        job: [
+            "Designing the ISE! 2024 website in collaboration with the creative team.",
+            "Creating visually appealing user interfaces that enhance the overall aesthetic and branding.",
+            "Developing seamless and intuitive user experiences to improve usability.",
+            "Collaborating closely with cross-functional teams to ensure design consistency and functionality.",
+        ]
     },
 ]
