@@ -17,17 +17,23 @@ function Card() {
     return (
         <div className='flex flex-col gap-1'>
             {experiences.map((experience) => (
-                <Disclosure key={experience.position} className='w-full rounded-xl hover:inner-border hover:shadow-md hover:anim anim-fast hover:inner-border-zinc-200 p-4'>
+                <Disclosure key={experience.company} className='w-full rounded-xl hover:inner-border hover:shadow-md hover:anim anim-fast hover:inner-border-zinc-200 p-4'>
                     <DisclosureTrigger>
                         <div className='flex flex-row gap-5 items-center'>
                             <Image 
                                 src={experience.img} 
                                 alt={experience.company}
-                                height={56} 
-                                width={56} 
-                                className='rounded-xl border border-slate-200'/>
-                            <div className='w-full'>
-                                <p className='text-base font-medium'>{experience.company}</p>
+                                height={40} 
+                                width={40}
+                                className='md:hidden rounded-lg border border-slate-200'/>
+                            <Image 
+                                src={experience.img} 
+                                alt={experience.company}
+                                height={48} 
+                                width={48}
+                                className='hidden md:block rounded-xl border border-slate-200'/>
+                            <div className='w-full gap-1 flex flex-col'>
+                                <p className='text-sm font-medium'>{experience.company}</p>
                                 <div className='flex flex-row justify-between'>
                                     <Paragraph text={experience.position}></Paragraph>
                                     <p className='anim text-background/50 hover:text-background text-xs'>{experience.date}</p>
@@ -37,11 +43,11 @@ function Card() {
                     </DisclosureTrigger>
                     <DisclosureContent>
                         <div className='overflow-hidden pb-3 flex flex-col pt-4 gap-3'>
-                            <p className='text-xs text-background/70'>{experience.description}</p>
+                            <p className='text-xs text-background/70 text-justify' >{experience.description}</p>
                             <div className='flex flex-col'>
-                                <p className='text-xs text-background/70'>Key Responsibilities</p>
+                                <p className='text-xs text-background/70 '>Key Responsibilities</p>
                                 {experience.job?.map((jobItem, index) => {
-                                    return <li key={index} className='text-xs text-background/70'>{jobItem}</li>
+                                    return <li key={index} className='text-xs text-justify text-background/70'>{jobItem}</li>
                                 })}
                             </div>
                             <Link href={experience.link} className='flex flex-row gap-1 items-center'>
