@@ -71,6 +71,18 @@ const config: Config = {
 					backgroundPosition: "-200% 0",
 					},
 				},
+				wiggle: {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' },
+				},
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+			},
+			animation: {
+				wiggle: 'wiggle 1s ease-in-out infinite',
+				fadeIn: 'fadeIn 0.5s ease-in-out forwards',
 			},
 		}
 	},

@@ -1,9 +1,16 @@
-import { Linkedin, Sun, Moon, ArrowUpRight, MoveRight  } from 'lucide-react';
-import { IconBrandBehance, IconSignature, IconBrandInstagram, IconExternalLink, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime } from '@tabler/icons-react';
+import { Linkedin, Sun, Moon, ArrowUpRight, MoveRight} from 'lucide-react';
+import { FaMedium } from "react-icons/fa6";
+import { IconBrandBehance, IconSignature, IconBrandInstagram, IconPhoneRinging,  IconExternalLink, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime, IconBrandMedium } from '@tabler/icons-react';
 
 export const LinkedinIcon = () => {
     return (
         <Linkedin strokeWidth={1} className='text-foreground'/>
+    )
+}
+
+export const LinkedinIconDark = () => {
+    return (
+        <Linkedin strokeWidth={1}/>
     )
 }
 
@@ -37,6 +44,12 @@ export const GithubIcon = () => {
     )
 }
 
+export const GithubIconDark = () => {
+    return (
+        <IconBrandGithub stroke={1.25} className='h-full w-full'/>
+    )
+}
+
 export const MeIcon = () => {
     return (
         <IconCalendarTime strokeWidth={1.25} className='h-full w-full text-foreground'/>
@@ -55,9 +68,21 @@ export const BehanceIcon = () => {
     )
 }
 
+export const BehanceIconDark = () => {
+    return (
+        <IconBrandBehance stroke={1} width={30} height={30}/>
+    )
+}
+
 export const InstagramIcon = () => {
     return (
         <IconBrandInstagram stroke={1} width={27} height={27} className='text-foreground'/>
+    )
+}
+
+export const InstagramIconDark = () => {
+    return (
+        <IconBrandInstagram stroke={1} width={27} height={27}/>
     )
 }
 
@@ -100,5 +125,23 @@ export const ArrowUpIcon = () => {
 export const ArrowRightIcon = () => {
     return (
         <MoveRight strokeWidth={2} width={28} height={28}/>
+    )
+}
+
+export const Laptop = () => {
+    return (
+        <IconPhoneRinging strokeWidth={2} width={16} height={16}/>
+    )
+}
+
+export const MediumIcon = () => {
+    return (
+        <FaMedium strokeWidth={2} className='text-white' width={28} height={28}/>
+    )
+}
+
+export const MediumIconDark = () => {
+    return (
+        <FaMedium strokeWidth={2} width={28} height={28}/>
     )
 }

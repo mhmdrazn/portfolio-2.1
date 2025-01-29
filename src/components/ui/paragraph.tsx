@@ -1,7 +1,8 @@
 import React from 'react';
+import { ReactNode } from "react";
 
 interface Paragraph {
-    text: string;
+    text: ReactNode;
 }
 
 const Paragraph: React.FC<Paragraph> = ({ text }) => {

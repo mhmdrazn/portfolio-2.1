@@ -1,12 +1,19 @@
-import { LinkedinIcon, GithubIcon, SignatureIcon, BehanceIcon, InstagramIcon, HomeIcon, ProjectIcon, MeIcon, RetrosIcon, JourneyIcon } from '@/components/ui/icons';
-import { Description } from '@radix-ui/react-toast';
-import { link } from 'fs';
+import { LinkedinIcon, LinkedinIconDark, GithubIcon, GithubIconDark, SignatureIcon, BehanceIcon, BehanceIconDark, InstagramIcon, InstagramIconDark, HomeIcon, ProjectIcon, MeIcon, RetrosIcon, JourneyIcon, MediumIcon, MediumIconDark } from '@/components/ui/icons';
 
 export const socialLinks = [
-    {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIcon/>},
-    {href: "https://github.com/mhmdrazn", icon: <GithubIcon />},
-    {href: "https://www.behance.net/mhmdrazn", icon: <BehanceIcon />},
-    {href: "https://www.instagram.com/mhmdrazn", icon: <InstagramIcon />}
+    {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIcon/>, name: "Linkedin"},
+    {href: "https://github.com/mhmdrazn", icon: <GithubIcon />, name: "GitHub"},
+    {href: "https://www.behance.net/mhmdrazn", icon: <BehanceIcon />, name: "Behance"},
+    {href: "https://www.instagram.com/mhmdrazn", icon: <InstagramIcon />, name: "Instagram"},
+    {href: "https://www.medium.com/@mhmdrazn", icon: <MediumIcon />, name: "Medium"},
+]
+
+export const socialLinksDark = [
+    {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIconDark/>, name: "Linkedin"},
+    {href: "https://github.com/mhmdrazn", icon: <GithubIconDark/>, name: "GitHub"},
+    {href: "https://www.behance.net/mhmdrazn", icon: <BehanceIconDark/>, name: "Behance"},
+    {href: "https://www.instagram.com/mhmdrazn", icon: <InstagramIconDark />, name: "Instagram"},
+    {href: "https://www.medium.com/@mhmdrazn", icon: <MediumIconDark/>, name: "Medium"},
 ]
 
 export const action = [

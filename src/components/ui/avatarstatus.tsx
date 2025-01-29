@@ -9,7 +9,7 @@ const badgeMotion = {
         height: 16,
     },
     hover: {
-        width: 100,
+        width: 60,
         height: 20,
         transition: {
             duration: 0.2,
@@ -37,19 +37,19 @@ const AvatarStatus = () => {
             animate="rest"
             className="group/status relative h-fit w-fit cursor-default rounded-full border border-background/10"
         >
-        <Avatar className="md:h-12 md:w-12 w-10 h-10">
+        <Avatar className="w-24 h-24">
             <AvatarImage
-            src="https://github.com/mhmdrazn.png"
+            src="/razan3.jpg"
             alt="Razan's avatar"
             />
             <AvatarFallback>MS</AvatarFallback>
         </Avatar>
         <motion.div
             variants={badgeMotion}
-            className="absolute bottom-0 left-8 overflow-hidden w-fit rounded-full flex justify-center items-center bg-green-500 text-xs font-medium text-white"
+            className="absolute bottom-0 left-16 overflow-hidden w-fit rounded-full flex justify-center items-center bg-green-500 text-xs font-medium text-white"
         >
             <motion.span variants={textMotion} className="md:text-xs text-[10px]">
-            On Vacancy 🏄‍♂️
+                Online
             </motion.span>
         </motion.div>
         </motion.div>
