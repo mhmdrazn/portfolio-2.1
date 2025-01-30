@@ -13,7 +13,7 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Hola Razan!",
+  title: "Razan | Personal Website",
   description: "UI/UX and Product Designer",
 };
 

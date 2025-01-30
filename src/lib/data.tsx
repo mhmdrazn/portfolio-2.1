@@ -1,4 +1,22 @@
-import { LinkedinIcon, LinkedinIconDark, GithubIcon, GithubIconDark, SignatureIcon, BehanceIcon, BehanceIconDark, InstagramIcon, InstagramIconDark, HomeIcon, ProjectIcon, MeIcon, RetrosIcon, JourneyIcon, MediumIcon, MediumIconDark } from '@/components/ui/icons';
+import { 
+    LinkedinIcon, 
+    LinkedinIconDark, 
+    GithubIcon, 
+    GithubIconDark, 
+    SignatureIcon, 
+    BehanceIcon, 
+    BehanceIconDark, 
+    InstagramIcon, 
+    InstagramIconDark, 
+    HomeIcon, ProjectIcon, 
+    MeIcon, 
+    RetrosIcon, 
+    JourneyIcon, 
+    MediumIcon, 
+    MediumIconDark } from '@/components/ui/icons';
+
+import StackIcon from 'tech-stack-icons';
+import { SiOpencv } from "react-icons/si";
 
 export const socialLinks = [
     {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIcon/>, name: "Linkedin"},
@@ -169,4 +187,91 @@ export const experiences = [
             "Collaborating closely with cross-functional teams to ensure design consistency and functionality.",
         ]
     },
+]
+
+export const techStacks = [
+    {
+        name: "Figma",
+        icon: <StackIcon name="figma" />
+    },
+    {
+        name: "Framer",
+        icon: <StackIcon name="framer" />
+    },
+    {
+        name: "Miro",
+        icon: <StackIcon name="miro" />
+    },
+    {
+        name: "Slack",
+        icon: <StackIcon name="slack" />
+    },
+    {
+        name: "JavaScript",
+        icon: <StackIcon name="js" />
+    },
+    {
+        name: "TypeScript",
+        icon: <StackIcon name="typescript" />
+    },
+    {
+        name: "React",
+        icon: <StackIcon name="reactjs" />
+    },
+    {
+        name: "Next",
+        icon: <StackIcon name="nextjs" />
+    },
+    {
+        name: "Tailwind CSS",
+        icon: <StackIcon name="tailwindcss" />
+    },
+    {
+        name: "Shadcn",
+        icon: <StackIcon name="shadcnui" />
+    },
+    {
+        name: "Dart",
+        icon: <StackIcon name="dart" />
+    },
+    {
+        name: "Flutter",
+        icon: <StackIcon name="flutter" />
+    },
+    {
+        name: "Android Studio",
+        icon: <StackIcon name="android" />
+    },
+    {
+        name: "Python",
+        icon: <StackIcon name="python" />
+    },
+    // {
+    //     name: "OpenCV",
+    //     icon: <SiOpencv />
+    // },
+    {
+        name: "Java",
+        icon: <StackIcon name="java" />
+    },
+    {
+        name: "PostgreSQL",
+        icon: <StackIcon name="postgresql" />
+    },
+    {
+        name: "Firebase",
+        icon: <StackIcon name="firebase" />
+    },
+    {
+        name: "Supabase",
+        icon: <StackIcon name="supabase" />
+    },
+    {
+        name: "Git",
+        icon: <StackIcon name="git" />
+    },
+    {
+        name: "GitHub",
+        icon: <StackIcon name="github" />
+    },    
 ]

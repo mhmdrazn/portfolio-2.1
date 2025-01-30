@@ -1,6 +1,6 @@
 import { Linkedin, Sun, Moon, ArrowUpRight, MoveRight} from 'lucide-react';
 import { FaMedium } from "react-icons/fa6";
-import { IconBrandBehance, IconSignature, IconBrandInstagram, IconPhoneRinging,  IconExternalLink, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime, IconBrandMedium } from '@tabler/icons-react';
+import { IconBrandBehance, IconSignature, IconBrandInstagram, IconPhoneRinging,  IconExternalLink, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime, IconBrandMedium, IconSend } from '@tabler/icons-react';
 
 export const LinkedinIcon = () => {
     return (
@@ -143,5 +143,11 @@ export const MediumIcon = () => {
 export const MediumIconDark = () => {
     return (
         <FaMedium strokeWidth={2} width={28} height={28}/>
+    )
+}
+
+export const SendIcon = () => {
+    return (
+        <IconSend strokeWidth={2} width={28} height={28}/>
     )
 }
