@@ -5,10 +5,11 @@ import { IconPhoneRinging, IconBriefcaseFilled, IconFileCertificate, IconSend } 
 import { TextEffect } from "@/components/ui/texteffect";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { socialLinksDark, techStacks } from "@/lib/data";
+import { socialLinksDark, techStacks, expNow } from "@/lib/data";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { TextMorph } from "@/components/ui/text-morph";
 import { useState } from 'react';
+import Image from "next/image";
 
 import AvatarStatus from "@/components/ui/avatarstatus";
 import Link from "next/link";
@@ -96,24 +97,18 @@ export default function Home() {
       </Template>
 
       <Template>
-        <TextEffect 
-          preset='fade-in-blur' 
-          speedReveal={1.1} 
-          speedSegment={0.3}
+        <h1
           className="text-md font-semibold">
           About Me
-        </TextEffect>
+        </h1>
         
         <Paragraph text={"I'm Muhammad Razan, but you can call me Razan. Currently an undergraduate Information Systems student @ITS. I'm a curious designer, coder, and maybe even a storyteller (though I’m not so sure about that, lol). I have a strong interest in Product Management, Software Development, and Design. Based in Surabaya, Indonesia."}/> 
         
         <div className='flex flex-col items-start justify-center gap-1 w-full'>
-          <TextEffect 
-            preset='fade-in-blur' 
-            speedReveal={1.1} 
-            speedSegment={0.3}
+          <h1
             className="text-xs text-background/50">
             Still curious? Ask me anything.
-          </TextEffect>
+          </h1>
 
           <TextMorph className='text-lg font-semibold text-background/50'>
             {text}
@@ -132,23 +127,31 @@ export default function Home() {
       </Template>
 
       <Template>
-        <TextEffect   
-          preset='fade-in-blur' 
-          speedReveal={1.1} 
-          speedSegment={0.3}
+        <h1
           className="text-md font-semibold">
           Where I am right now?
-        </TextEffect>
+        </h1>
+        
+        <div className="flex flex-col items-start justify-start">
+          {expNow.map((index, key) => (
+            <div key={key} className="flex flex-row w-fit items-center text-sm font-medium">
+              <p className="text-xs min-w-32 text-background/50 font-normal">{index.time}</p>
+              <div className="flex flex-row gap-4 items-center">
+                <Paragraph text={index.position}/>
+                <Link href={index.link}>
+                  <Image src={index.company} alt={index.link} height={15} width={55}></Image>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </Template>
 
       <Template>
-        <TextEffect   
-          preset='fade-in-blur' 
-          speedReveal={1.1} 
-          speedSegment={0.3}
-          className="text-md font-semibold">
+        <h1
+          className="font-semibold">
           Toolkit and Weapons
-        </TextEffect>
+        </h1>
         
         <Paragraph text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie sit amet velit quis iaculis. Nam vel ultrices metus. Vestibulum in condimentum nisl. "}/>
 
@@ -167,6 +170,26 @@ export default function Home() {
           </InfiniteSlider>
         </div>
       </Template>
+
+      <Template>
+        <h1
+          className="text-md font-semibold">
+          Side Project
+        </h1>
+        <div className="flex flex-row w-full justify-between items-center">
+          <Image src={'/projects/buangbijak.svg'} alt="buangbijak" height={30} width={140}></Image>
+          <Image src={'/projects/uride.svg'} alt="buangbijak" height={10} width={70}></Image>
+          <Image src={'/projects/aimo.svg'} alt="buangbijak" height={20} width={100}></Image>
+        </div>
+      </Template>
+
+      <Template>
+        <h1
+          className="text-md font-semibold">
+          My Little Corner
+        </h1>
+      </Template>
+
     </main>
   );
 }

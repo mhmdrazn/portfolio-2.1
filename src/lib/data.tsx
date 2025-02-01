@@ -275,3 +275,24 @@ export const techStacks = [
         icon: <StackIcon name="github" />
     },    
 ]
+
+export const expNow = [
+    {
+        time: "Jan 24 - Now",
+        position: "Product Designer",
+        company: "/exp/ajakgerak.svg",
+        link: "https://linkedin.com/company/ajakgerak"
+    },
+    // {
+    //     time: "Oct 24 - Now",
+    //     position: "Lead UI/UX Designer",
+    //     company: "/exp/futurest.svg",
+    //     link: "https://linkedin.com/company/futurest"
+    // },
+    {
+        time: "Nov 24 - Now",
+        position: "Lead UI/UX Designer",
+        company: "/exp/tedx.svg",
+        link: "https://linkedin.com/company/tedxits"
+    },
+]
