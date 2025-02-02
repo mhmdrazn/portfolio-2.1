@@ -14,30 +14,6 @@ export const LinkedinIconDark = () => {
     )
 }
 
-export const HomeIcon = () => {
-    return (
-        <IconSmartHome stroke={1} className='h-full w-full text-foreground'/>
-    )
-}
-
-export const ProjectIcon = () => {
-    return (
-        <IconCategory2 strokeWidth={1} className='h-full w-full text-foreground'/>
-    ) 
-}
-
-export const JourneyIcon = () => {
-    return (
-        <IconCarouselHorizontal stroke={1} width={32} height={32} className='h-full w-full text-foreground'/>
-    )
-}
-
-export const RetrosIcon = () => {
-    return (
-        <IconNotebook strokeWidth={1} className='h-full w-full text-foreground'/>
-    )
-}
-
 export const GithubIcon = () => {
     return (
         <IconBrandGithub stroke={1.25} className='h-full w-full text-foreground'/>
@@ -47,12 +23,6 @@ export const GithubIcon = () => {
 export const GithubIconDark = () => {
     return (
         <IconBrandGithub stroke={1.25} className='h-full w-full'/>
-    )
-}
-
-export const MeIcon = () => {
-    return (
-        <IconCalendarTime strokeWidth={1.25} className='h-full w-full text-foreground'/>
     )
 }
 
@@ -83,12 +53,6 @@ export const InstagramIcon = () => {
 export const InstagramIconDark = () => {
     return (
         <IconBrandInstagram stroke={1} width={27} height={27}/>
-    )
-}
-
-export const SignatureIcon = () => {
-    return (
-        <IconSignature stroke={1} className='h-full w-full text-foreground'/>
     )
 }
 

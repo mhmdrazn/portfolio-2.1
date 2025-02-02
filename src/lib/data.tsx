@@ -48,50 +48,6 @@ export const quickLinks = [
     {href: "/retros", label: "Retrospective"},
 ]
 
-export const dock = [
-    {
-        title: "Home",
-        icon: (
-            <HomeIcon />
-        ),
-        href: "/",
-    },
-    {
-        title: "Journey",
-        icon: (
-            <JourneyIcon/>
-        ),
-        href: "/journey",
-    },
-    {
-        title: "Projects",
-        icon: (
-            <ProjectIcon/>
-        ),
-        href: "/projects",
-    },
-    {
-        title: "Retrospective",
-        icon: (
-            <RetrosIcon/>
-        ),
-        href: "/retro",
-    },
-    {
-        title: "Guestbook",
-        icon: (
-            <SignatureIcon/>
-        ),
-        href: "/guest",
-    },
-    {
-        title: "Meet with me",
-        icon: (
-            <MeIcon/>
-        ),
-        href: "https://cal.com/hola-razan",
-    },
-];
 
 export const experiences = [
     {
@@ -295,4 +251,27 @@ export const expNow = [
         company: "/exp/tedx.svg",
         link: "https://linkedin.com/company/tedxits"
     },
+]
+
+export const projects = [
+    {
+        img: '/projects/ilits.png',
+        title: 'Ini Lho ITS! 2025',
+        href: "https://inilho.its.ac.id/",
+    },
+    {
+        img: '/projects/ise.png',
+        title: 'Information System Expo!',
+        href: "https://ise-its.com/",
+    },
+    {
+        img: '/projects/tedx.png',
+        title: 'TEDxITS',
+        href: "https://tedxits.org/",
+    },
+    {
+        img: '/projects/futurest.png',
+        title: 'Futurest',
+        href: "https://futurest.id/",
+    }
 ]

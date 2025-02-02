@@ -5,7 +5,7 @@ import { IconPhoneRinging, IconBriefcaseFilled, IconFileCertificate, IconSend } 
 import { TextEffect } from "@/components/ui/texteffect";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { socialLinksDark, techStacks, expNow } from "@/lib/data";
+import { socialLinksDark, techStacks, expNow, projects } from "@/lib/data";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { TextMorph } from "@/components/ui/text-morph";
 import { useState } from 'react';
@@ -16,6 +16,7 @@ import Link from "next/link";
 import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
 import { Input } from "@/components/ui/input";
+import { ArrowBigRight, ArrowRight } from "lucide-react";
 
 const links = [
   {
@@ -53,7 +54,7 @@ const AnimatedLink = ({ href, icon: Icon, label }) => (
 export default function Home() {
   const [text, setText] = useState('');
   return (
-    <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-8'>
+    <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-10'>
       
       <Template>
           <AvatarStatus/>
@@ -85,8 +86,6 @@ export default function Home() {
             );
           })}
         </div>
-
-        <Separator/>
 
         <div className="flex flex-row gap-2">
           {links.map((link, index) => (
@@ -176,20 +175,42 @@ export default function Home() {
           className="text-md font-semibold">
           Side Project
         </h1>
+        <Paragraph text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie sit amet velit quis iaculis. Nam vel ultrices metus. Vestibulum in condimentum nisl. "}/>
         <div className="flex flex-row w-full justify-between items-center">
-          <Image src={'/projects/buangbijak.svg'} alt="buangbijak" height={30} width={140}></Image>
-          <Image src={'/projects/uride.svg'} alt="buangbijak" height={10} width={70}></Image>
-          <Image src={'/projects/aimo.svg'} alt="buangbijak" height={20} width={100}></Image>
+          <Image src={'/projects/buangbijak.svg'} alt="buangbijak" height={20} width={125}></Image>
+          <Image src={'/projects/uride.svg'} alt="buangbijak" height={10} width={60}></Image>
+          <Image src={'/projects/aimo.svg'} alt="buangbijak" height={20} width={80}></Image>
         </div>
       </Template>
 
       <Template>
-        <h1
-          className="text-md font-semibold">
+        <div
+          className="text-md font-semibold flex flex-row justify-between w-full items-center">
           My Little Corner
-        </h1>
+          <Button variant={"ghost"} className="text-xs anim text-background/50 w-fit">See more</Button>
+        </div>
+        <div className="grid grid-cols-2 gap-4">
+          {projects.map((index, key) => (
+            <div key={key} className="flex flex-col gap-3 w-fit">
+              <div className="rounded-lg overflow-clip h-fit shadow-sm border">
+                <Link href={index.href}>
+                  <Image src={index.img} height={1000} width={1200} alt={index.title} className="saturate-50 hover:saturate-100 anim" unoptimized/>
+                </Link>
+              </div>  
+              <p className="text-xs text-background  ">{index.title}</p>
+            </div>
+          ))}
+        </div>
       </Template>
-
+      <div className="text-xs flex flex-row text-background/50 anim w-auto gap-2">
+        inspired by
+        <Link href={"https://github.com/msafdev"} className="anim text-background/50 w-fit">
+          @msafdev
+        </Link>
+        <Link href={"https://github.com/marcellinoco"} className="anim text-background/50 w-fit">
+          @marcellino
+        </Link>
+      </div>
     </main>
   );
 }
