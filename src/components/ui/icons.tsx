@@ -1,6 +1,6 @@
 import { Linkedin, Sun, Moon, ArrowUpRight, MoveRight} from 'lucide-react';
 import { FaMedium } from "react-icons/fa6";
-import { IconBrandBehance, IconSignature, IconBrandInstagram, IconPhoneRinging,  IconExternalLink, IconMail, IconBrandGithub, IconCarouselHorizontal, IconSmartHome, IconCategory2, IconNotebook, IconCalendarTime, IconBrandMedium, IconSend } from '@tabler/icons-react';
+import { IconBrandBehance, IconBrandInstagram, IconPhoneRinging,  IconExternalLink, IconMail, IconBrandGithub, IconSend } from '@tabler/icons-react';
 
 export const LinkedinIcon = () => {
     return (
