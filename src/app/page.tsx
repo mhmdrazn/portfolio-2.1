@@ -3,7 +3,6 @@
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { IconPhoneRinging, IconBriefcaseFilled, IconFileCertificate, IconSend } from "@tabler/icons-react";
 import { TextEffect } from "@/components/ui/texteffect";
-import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { socialLinksDark, techStacks, expNow, projects } from "@/lib/data";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
@@ -16,7 +15,6 @@ import Link from "next/link";
 import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
 import { Input } from "@/components/ui/input";
-import { ArrowBigRight, ArrowRight } from "lucide-react";
 
 const links = [
   {
@@ -36,7 +34,7 @@ const links = [
   },
 ];
 
-const AnimatedLink = ({ href, icon: Icon, label }) => (
+const AnimatedLink = ({ href, icon: Icon, label }: { href: string; icon: React.ElementType; label: string }) => (
   <Link
     href={href}
     className="px-4 py-2 border anim rounded-xl w-fit hover:bg-foreground/70 md:text-sm text-xs flex flex-row gap-2 hover:text-background text-background/60 items-center group"

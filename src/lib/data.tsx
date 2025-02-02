@@ -3,20 +3,14 @@ import {
     LinkedinIconDark, 
     GithubIcon, 
     GithubIconDark, 
-    SignatureIcon, 
     BehanceIcon, 
     BehanceIconDark, 
     InstagramIcon, 
     InstagramIconDark, 
-    HomeIcon, ProjectIcon, 
-    MeIcon, 
-    RetrosIcon, 
-    JourneyIcon, 
     MediumIcon, 
     MediumIconDark } from '@/components/ui/icons';
 
 import StackIcon from 'tech-stack-icons';
-import { SiOpencv } from "react-icons/si";
 
 export const socialLinks = [
     {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIcon/>, name: "Linkedin"},

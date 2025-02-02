@@ -5,7 +5,6 @@ import {
     DisclosureContent,
     DisclosureTrigger,
 } from '../ui/disclosure';
-import { Separator } from '../ui/separator';
 import Image from 'next/image'
 import Link from 'next/link'
 import Paragraph from './paragraph'
