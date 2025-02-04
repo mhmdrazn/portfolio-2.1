@@ -304,7 +304,6 @@ export const features = [
     {
         name: "Uride",
         logo: "/projects/uride-logo.png",
-        classname: "w-6 h-16",
         desc: "URide is a vehicle maintenance app addressing common challenges for motor vehicle users." ,
         href: "https://uride.id/",
         background: (
@@ -319,7 +318,6 @@ export const features = [
     {
         name: "Aimo",
         logo: "/projects/aimo-logo.png",
-        classname: "w-6 h-16",
         desc: "Aimo is a mental health app supporting expectant and postpartum mothers by reducing Postpartum Depression (PPD) risks.",
         href: "https://aimo.id/",
         background: (
