@@ -4,12 +4,13 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { IconPhoneRinging, IconBriefcaseFilled, IconFileCertificate, IconSend } from "@tabler/icons-react";
 import { TextEffect } from "@/components/ui/texteffect";
 import { Button } from "@/components/ui/button";
-import { socialLinksDark, techStacks, expNow, projects } from "@/lib/data";
+import { socialLinksDark, techStacks, expNow, projects, features } from "@/lib/data";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { TextMorph } from "@/components/ui/text-morph";
+import { BentoGrid , BentoCard } from "@/components/ui/bento";
 import { useState } from 'react';
 import Image from "next/image";
-
+import TerminalAnim from "@/components/ui/terminal-anim";
 import AvatarStatus from "@/components/ui/avatarstatus";
 import Link from "next/link";
 import Template from "@/components/ui/template";
@@ -52,8 +53,8 @@ const AnimatedLink = ({ href, icon: Icon, label }: { href: string; icon: React.E
 export default function Home() {
   const [text, setText] = useState('');
   return (
-    <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-10'>
-      
+    <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-16'>
+
       <Template>
           <AvatarStatus/>
 
@@ -92,6 +93,8 @@ export default function Home() {
         </div>
 
       </Template>
+
+      <TerminalAnim/>
 
       <Template>
         <h1
@@ -150,7 +153,7 @@ export default function Home() {
           Toolkit and Weapons
         </h1>
         
-        <Paragraph text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie sit amet velit quis iaculis. Nam vel ultrices metus. Vestibulum in condimentum nisl. "}/>
+        <Paragraph text={"When I'm not busy saving the digital world one pixel at a time, I arm myself with these tools. Think of me as a digital superhero, but instead of a cape, I wear a hoodie, and instead of a shield, I wield a keyboard. Here’s what’s in my utility belt."}/>
 
         <div className="pt-3 flex flex-col gap-2 w-full overflow-hidden">
           <InfiniteSlider durationOnHover={125} gap={24}>
@@ -173,12 +176,12 @@ export default function Home() {
           className="text-md font-semibold">
           Side Project
         </h1>
-        <Paragraph text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie sit amet velit quis iaculis. Nam vel ultrices metus. Vestibulum in condimentum nisl. "}/>
-        <div className="flex flex-row w-full justify-between items-center">
-          <Image src={'/projects/buangbijak.svg'} alt="buangbijak" height={20} width={125}></Image>
-          <Image src={'/projects/uride.svg'} alt="buangbijak" height={10} width={60}></Image>
-          <Image src={'/projects/aimo.svg'} alt="buangbijak" height={20} width={80}></Image>
-        </div>
+        <Paragraph text={"These are my passion projects, where I turn caffeine into code and dreams into apps. Think of them as my digital children, sometimes dysfunctional, but always full of potential."}/>
+        <BentoGrid className="w-xl">
+          {features.map((feature, idx) => (
+            <BentoCard key={idx} {...feature} />
+          ))}
+        </BentoGrid>
       </Template>
 
       <Template>
@@ -200,15 +203,6 @@ export default function Home() {
           ))}
         </div>
       </Template>
-      <div className="text-xs flex flex-row text-background/50 anim w-auto gap-2">
-        inspired by
-        <Link href={"https://github.com/msafdev"} className="anim text-background/50 w-fit">
-          @msafdev
-        </Link>
-        <Link href={"https://github.com/marcellinoco"} className="anim text-background/50 w-fit">
-          @marcellino
-        </Link>
-      </div>
     </main>
   );
 }

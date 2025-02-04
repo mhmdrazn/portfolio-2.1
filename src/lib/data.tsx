@@ -9,6 +9,7 @@ import {
     InstagramIconDark, 
     MediumIcon, 
     MediumIconDark } from '@/components/ui/icons';
+import Image from 'next/image';
 
 import StackIcon from 'tech-stack-icons';
 
@@ -269,3 +270,65 @@ export const projects = [
         href: "https://futurest.id/",
     }
 ]
+
+export const features = [
+    {
+        name: "Lokantara",
+        logo: "/projects/lokantara-logo.png",
+        desc: "Lokantara is an online tour platform showcasing Indonesia's heritage through interactive and gamified travel experiences.",
+        href: "https://buangbijak.com/",
+        background: (
+            <Image 
+                src={"/projects/lokantara-slide.png"} 
+                fill 
+                className="object-cover absolute [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
+                alt={"buangbijak"}>
+            </Image>
+        ),
+    },
+    {
+        name: "BuangBijak",
+        logo: "/projects/buangbijak-logo.png",
+        className: "w-6 h-16",
+        desc: "BuangBijak is a waste management platform connecting users with on-demand pickup services.",
+        href: "https://buangbijak.com/",
+        background: (
+            <Image 
+                src={"/projects/buangbijak-slide4.png"} 
+                fill 
+                className="object-cover absolute [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
+                alt={"buangbijak"}>
+            </Image>
+        )
+    },
+    {
+        name: "Uride",
+        logo: "/projects/uride-logo.png",
+        classname: "w-6 h-16",
+        desc: "URide is a vehicle maintenance app addressing common challenges for motor vehicle users." ,
+        href: "https://uride.id/",
+        background: (
+            <Image 
+                src={"/projects/uride-slide.png"} 
+                fill 
+                className="object-cover absolute [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
+                alt={"buangbijak"}>
+            </Image>
+        )
+    },
+    {
+        name: "Aimo",
+        logo: "/projects/aimo-logo.png",
+        classname: "w-6 h-16",
+        desc: "Aimo is a mental health app supporting expectant and postpartum mothers by reducing Postpartum Depression (PPD) risks.",
+        href: "https://aimo.id/",
+        background: (
+            <Image 
+                src={"/projects/aimo-slide.png"} 
+                fill 
+                className="object-cover absolute [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
+                alt={"buangbijak"}>
+            </Image>
+        )
+    },
+];
