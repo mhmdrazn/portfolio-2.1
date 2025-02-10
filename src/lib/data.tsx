@@ -280,23 +280,24 @@ export const features = [
         background: (
             <Image 
                 src={"/projects/lokantara-slide.png"} 
-                fill 
-                className="object-cover absolute [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
-                alt={"buangbijak"}>
+                width={1920} height={1080}
+                className="object-cover absolute top-0"
+                style={{ maskImage: "linear-gradient(to top, transparent 40%, #000 100%)" }}
+                alt={"lokantara"}>
             </Image>
         ),
     },
     {
         name: "BuangBijak",
         logo: "/projects/buangbijak-logo.png",
-        className: "w-6 h-16",
         desc: "BuangBijak is a waste management platform connecting users with on-demand pickup services.",
-        href: "https://buangbijak.com/",
+        href: "https://www.figma.com/proto/FLVbiNd05RG9mma5JX4Rul/BuangBijak?node-id=10-119&t=Exzto4g4ATy6N5GY-0&scaling=scale-down&content-scaling=responsive&page-id=0%3A1&starting-point-node-id=8%3A2",
         background: (
             <Image 
                 src={"/projects/buangbijak-slide4.png"} 
-                fill 
-                className="object-cover absolute [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
+                width={1920} height={1080}
+                className="object-cover absolute top-0"
+                style={{ maskImage: "linear-gradient(to top, transparent 40%, #000 100%)" }}
                 alt={"buangbijak"}>
             </Image>
         )
@@ -305,13 +306,15 @@ export const features = [
         name: "Uride",
         logo: "/projects/uride-logo.png",
         desc: "URide is a vehicle maintenance app addressing common challenges for motor vehicle users." ,
-        href: "https://uride.id/",
+        href: "https://www.figma.com/proto/irgoRWbKsUTcinAQKS0K2D/URide?type=design&node-id=75-661&t=I4ODSpyIZ2bMxR9T-0&scaling=scale-down&page-id=75%3A661&starting-point-node-id=579%3A1668",
+        className: "col-span-3 lg:col-span-1",
         background: (
             <Image 
                 src={"/projects/uride-slide.png"} 
-                fill 
-                className="object-cover absolute [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
-                alt={"buangbijak"}>
+                width={1920} height={1080}
+                className="object-cover absolute top-0"
+                style={{ maskImage: "linear-gradient(to top, transparent 40%, #000 100%)" }}
+                alt={"uride"}>
             </Image>
         )
     },
@@ -319,13 +322,15 @@ export const features = [
         name: "Aimo",
         logo: "/projects/aimo-logo.png",
         desc: "Aimo is a mental health app supporting expectant and postpartum mothers by reducing Postpartum Depression (PPD) risks.",
-        href: "https://aimo.id/",
+        href: "https://www.figma.com/proto/oa0GcifcAdurFxMFdaa3Bo/Aimo?node-id=233-2616&t=BCEM1VluA9MNekoN-1&scaling=contain&page-id=9%3A3&starting-point-node-id=233%3A2616",
+        className: "col-span-3 lg:col-span-1",
         background: (
             <Image 
-                src={"/projects/aimo-slide.png"} 
-                fill 
-                className="object-cover absolute [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
-                alt={"buangbijak"}>
+                src={"/projects/aimo-slide.png"}
+                width={1920} height={1080}
+                className="object-cover absolute top-0"
+                style={{ maskImage: "linear-gradient(to top, transparent 40%, #000 100%)" }}
+                alt={"aimo"}>
             </Image>
         )
     },

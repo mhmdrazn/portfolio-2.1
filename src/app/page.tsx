@@ -35,6 +35,23 @@ const links = [
   },
 ];
 
+const FeaturedProjects = features.slice(0, 2);
+
+const blog = [
+  {
+    title: "Mechanisms of Computer Memory Retention",
+    description: "Memory is one of the important elements in a computer that has a central role in processing data and programs. We can liken this memory to computer memory. Its function is to store data that will be used by the computer when operating.",
+    href: "https://medium.com/@mhmdrazn/bagaimana-cara-komputer-mengingat-a9aaed85e3ad",
+    image: "/blog/memory.webp"
+  },
+  {
+    title: "Advanced CPU Design: Architectural Considerations and Innovations",
+    description: "If we develop a small program for our CPU that allows division of two numbers by repeatedly performing subtraction, the process would look like this: for example, to divide 16 by 4, we repeatedly subtract 4 from 16 until we reach zero or a negative number.",
+    href: "https://medium.com/@mhmdrazn/bagaimana-desain-cpu-tingkat-lanjut-edd82fddb158",
+    image: "/blog/cpu.webp"
+  },
+]
+
 const AnimatedLink = ({ href, icon: Icon, label }: { href: string; icon: React.ElementType; label: string }) => (
   <Link
     href={href}
@@ -56,42 +73,41 @@ export default function Home() {
     <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-16'>
 
       <Template>
-          <AvatarStatus/>
+        <AvatarStatus/>
 
-          <div className="flex flex-col gap-2">
-            <TextGenerateEffect 
-              isParagraph={false} 
-              duration={1.3} 
-              filter={true} 
-              words={"Muhammad Razan"}/>
-            <TextEffect 
-              preset='fade-in-blur' 
-              speedReveal={1.1} 
-              speedSegment={0.3} 
-              className="anim text-background/50 hover:text-background text-xs md:text-sm">
-              A student by day, a creative thinker, and a moody writer by night. Sometimes do design, sometimes code, and sometimes write. 
-            </TextEffect>
-          </div>
+        <div className="flex flex-col gap-2">
+          <TextGenerateEffect 
+            isParagraph={false} 
+            duration={1.3} 
+            filter={true} 
+            words={"Muhammad Razan"}/>
+          <TextEffect 
+            preset='fade-in-blur' 
+            speedReveal={1.1} 
+            speedSegment={0.3} 
+            className="anim text-background/50 hover:text-background text-xs md:text-sm">
+            A student by day, a creative thinker, and a moody writer by night. Sometimes do design, sometimes code, and sometimes write. 
+          </TextEffect>
+        </div>
 
-          <div className="flex flex-wrap">
-          {socialLinksDark.map((index, key) => {
-            return (
-              <Link className="flex flex-row gap-2" key={key} href={index.href}>
-                <Button variant={"ghost"} className="text-background/50 text-xs py-1">
-                  {index.icon}
-                  {index.name}
-                </Button>
-              </Link>
-            );
-          })}
+        <div className="flex flex-wrap md:justify-around md:gap-4">
+        {socialLinksDark.map((index, key) => {
+          return (
+            <Link className="flex flex-row gap-2" key={key} href={index.href}>
+              <Button variant={"ghost"} className="text-background/50 text-xs py-1">
+                {index.icon}
+                {index.name}
+              </Button>
+            </Link>
+          );
+        })}
         </div>
 
         <div className="flex flex-row gap-2">
-          {links.map((link, index) => (
-            <AnimatedLink key={index} {...link} />
-          ))}
+        {links.map((link, index) => (
+          <AnimatedLink key={index} {...link} />
+        ))}
         </div>
-
       </Template>
 
       <TerminalAnim/>
@@ -172,13 +188,40 @@ export default function Home() {
       </Template>
 
       <Template>
-        <h1
-          className="text-md font-semibold">
-          Side Project
-        </h1>
+        <div
+          className="text-md font-semibold flex flex-row justify-between w-full items-center">
+          Read my mind
+          <Link className="text-background/50 hover:text-background text-xs anim w-fit" href={"https://medium.com/@mhmdrazn"}>See more</Link>
+        </div>
+        <div className="flex flex-col gap-2">
+          {blog.map((index, key) => (
+            <Link href={index.href} key={key}>
+              <div className="w-full border h-24 overflow-clip rounded-lg items-center group hover:shadow-sm flex flex-row gap-5 hover:bg-foreground/50 anim">
+                <div className="flex flex-col p-4 justify-start pl-6 group-hover:pl-8 anim w-4/5 md:w-2/3">
+                  <h1 className="line-clamp-1 text-sm font-semibold text-background">
+                    {index.title}
+                  </h1>
+                  <p className="line-clamp-2 text-background/50 text-xs font-thin">
+                    {index.description}
+                  </p>
+                </div>
+                <Image src={index.image} alt={index.title} width={210} height={70} className="w-1/5 h-24 md:w-1/3 object-cover group-hover:scale-110 anim"
+                  style={{ maskImage: "linear-gradient(to right, transparent 0%, #000 70%)" }}/>
+              </div>
+            </Link>    
+          ))}
+        </div>
+      </Template>
+
+      <Template>
+        <div
+          className="text-md font-semibold flex flex-row justify-between w-full items-center">
+          Side Projects
+          <Link className="text-xs anim text-background/50 hover:text-background w-fit hover:text-background/" href={"/projects"}>See more</Link>
+        </div>
         <Paragraph text={"These are my passion projects, where I turn caffeine into code and dreams into apps. Think of them as my digital children, sometimes dysfunctional, but always full of potential."}/>
         <BentoGrid className="w-xl">
-          {features.map((feature, idx) => (
+          {FeaturedProjects.map((feature, idx) => (
             <BentoCard key={idx} {...feature} />
           ))}
         </BentoGrid>

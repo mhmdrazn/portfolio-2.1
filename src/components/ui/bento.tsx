@@ -23,7 +23,7 @@ const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
   return (
     <div
       className={cn(
-        "grid w-xl auto-rows-[18rem] grid-cols-2 gap-4",
+        "grid w-full auto-rows-[18rem] grid-cols-2 gap-4",
         className,
       )}
       {...props}
@@ -45,15 +45,14 @@ const BentoCard = ({
   <div
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-end overflow-hidden rounded-xl w-full",
-      "border",
+      "group relative col-span-3 flex flex-col justify-end overflow-hidden rounded-lg w-full border",
       className,
     )}
     {...props}
   >
     {background}
     <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10">
-      <Image src={logo} alt={logo} width={24} height={24} className="origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75" />
+      <Image src={logo} alt={logo} width={24} height={24} className="origin-left top-0 transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75" />
       <h3 className="text-lg font-semibold text-background">
         {name}
       </h3>
@@ -66,11 +65,9 @@ const BentoCard = ({
       )}
     >
       <Link href={href}>
-        <Button variant="ghost" asChild size="sm" className="pointer-events-auto w-fit">
-          <a href={href}>
-            See Prototype
-            <ArrowRightIcon/>
-          </a>
+        <Button variant="ghost" size="sm" className="pointer-events-auto w-fit">
+          See Prototype
+          <ArrowRightIcon/>
         </Button>
       </Link>
     </div>
