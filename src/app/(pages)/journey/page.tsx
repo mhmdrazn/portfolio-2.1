@@ -4,12 +4,12 @@ import Heading from '@/components/ui/heading'
 import Paragraph from '@/components/ui/paragraph'
 
 import Card from '@/components/ui/exp-card'
+import Template from '@/components/ui/template'
 
 function Journey() {
   return (
-    <section className='flex flex-col min-h-screen justify-start p-4 pt-8 md:p-12 lg:p-20 items-center'> 
-      <div className='md:max-w-2xl max-w-md w-full h-fit flex flex-col gap-8'>
-
+    <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-16'> 
+      <Template>
         <div className='flex flex-col gap-2'>
           <div className='flex gap-3 items-end'>
             {/* <ArrowUpIcon/> */}
@@ -27,8 +27,8 @@ function Journey() {
           <Paragraph text='Documented my journey here, showing what has been achieved so far. It’s a reminder of the experiences and progress made along the way.'/>
           <Card/>
         </div>
-      </div>
-    </section>
+      </Template>
+    </main>
   )
 }
 

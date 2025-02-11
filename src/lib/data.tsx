@@ -6,7 +6,6 @@ import {
     BehanceIcon, 
     BehanceIconDark, 
     InstagramIcon, 
-    InstagramIconDark, 
     MediumIcon, 
     MediumIconDark } from '@/components/ui/icons';
 import Image from 'next/image';
@@ -25,7 +24,6 @@ export const socialLinksDark = [
     {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIconDark/>, name: "Linkedin"},
     {href: "https://github.com/mhmdrazn", icon: <GithubIconDark/>, name: "GitHub"},
     {href: "https://www.behance.net/mhmdrazn", icon: <BehanceIconDark/>, name: "Behance"},
-    {href: "https://www.instagram.com/mhmdrazn", icon: <InstagramIconDark />, name: "Instagram"},
     {href: "https://www.medium.com/@mhmdrazn", icon: <MediumIconDark/>, name: "Medium"},
 ]
 

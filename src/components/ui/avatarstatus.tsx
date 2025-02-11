@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 const badgeMotion = {
     rest: {
@@ -35,18 +35,17 @@ const AvatarStatus = () => {
             initial="rest"
             whileHover="hover"
             animate="rest"
-            className="group/status relative h-fit w-fit cursor-default rounded-full border border-background/10"
+            className="group/status relative h-fit w-fit cursor-default rounded-3xl border border-background/10"
         >
-        <Avatar className="w-24 h-24">
+        <Avatar className="w-16 h-16">
             <AvatarImage
-            src="/razan3.jpg"
+            src="https://github.com/mhmdrazn.png"   
             alt="Razan's avatar"
             />
-            <AvatarFallback>MS</AvatarFallback>
         </Avatar>
         <motion.div
             variants={badgeMotion}
-            className="absolute bottom-0 left-16 overflow-hidden w-fit rounded-full flex justify-center items-center bg-green-500 text-xs font-medium text-white"
+            className="absolute bottom-0 left-12 overflow-hidden w-fit rounded-full flex justify-center items-center border-2 border-white bg-green-500 text-xs font-medium text-white"
         >
             <motion.span variants={textMotion} className="md:text-xs text-[10px]">
                 Online

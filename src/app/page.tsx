@@ -1,37 +1,26 @@
 "use client"
 
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { IconPhoneRinging, IconBriefcaseFilled, IconFileCertificate, IconSend } from "@tabler/icons-react";
-import { TextEffect } from "@/components/ui/texteffect";
+import { IconPhoneRinging,  IconSend } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
-import { socialLinksDark, techStacks, expNow, projects, features } from "@/lib/data";
+import { socialLinksDark, techStacks, expNow, features } from "@/lib/data";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { TextMorph } from "@/components/ui/text-morph";
 import { BentoGrid , BentoCard } from "@/components/ui/bento";
 import { useState } from 'react';
 import Image from "next/image";
-import TerminalAnim from "@/components/ui/terminal-anim";
 import AvatarStatus from "@/components/ui/avatarstatus";
 import Link from "next/link";
 import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
 import { Input } from "@/components/ui/input";
+import MusicCard from "@/components/ui/music";
+import SwipeButton from "@/components/ui/swipebutton";
 
 const links = [
   {
     href: "https://cal.com/hola-razan",
     icon: IconPhoneRinging,
     label: "Book a call",
-  },
-  {
-    href: "https://www.papermark.io/view/cm5wdajh5000u14d79vznrkb1",
-    icon: IconFileCertificate,
-    label: "Resume",
-  },
-  {
-    href: "https://www.papermark.io/view/cm5wdh7xe00061av5ktxo0aus",
-    icon: IconBriefcaseFilled,
-    label: "Portfolio",
   },
 ];
 
@@ -73,44 +62,35 @@ export default function Home() {
     <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-16'>
 
       <Template>
-        <AvatarStatus/>
+        <div className="flex flex-col gap-3 items-start w-full justify-start">
+          <AvatarStatus/>
+          <div className="flex flex-col gap-2">
+            <h1 className="font-medium text-lg">
+              Muhammad Razan
+            </h1>
+            <p
+              className="anim text-background/70 text-xs md:text-sm">
+              A student by day, a creative thinker, and a moody writer by night. Sometimes do design, sometimes code, and sometimes write. 
+            </p>
+          </div>  
 
-        <div className="flex flex-col gap-2">
-          <TextGenerateEffect 
-            isParagraph={false} 
-            duration={1.3} 
-            filter={true} 
-            words={"Muhammad Razan"}/>
-          <TextEffect 
-            preset='fade-in-blur' 
-            speedReveal={1.1} 
-            speedSegment={0.3} 
-            className="anim text-background/50 hover:text-background text-xs md:text-sm">
-            A student by day, a creative thinker, and a moody writer by night. Sometimes do design, sometimes code, and sometimes write. 
-          </TextEffect>
+          <div className="flex flex-row gap-10">
+            {socialLinksDark.map((index, key) => {
+              return (
+                <Link className="flex flex-row gap-3" key={key} href={index.href}>
+                  <Button variant={"link"} className="anim p-0 text-background/70 text-xs">
+                    {index.icon}
+                    {index.name}
+                  </Button>
+                </Link>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="flex flex-wrap md:justify-around md:gap-4">
-        {socialLinksDark.map((index, key) => {
-          return (
-            <Link className="flex flex-row gap-2" key={key} href={index.href}>
-              <Button variant={"ghost"} className="text-background/50 text-xs py-1">
-                {index.icon}
-                {index.name}
-              </Button>
-            </Link>
-          );
-        })}
-        </div>
-
-        <div className="flex flex-row gap-2">
-        {links.map((link, index) => (
-          <AnimatedLink key={index} {...link} />
-        ))}
-        </div>
+        {/* <SwipeButton className="border">Book a call</SwipeButton> */} 
       </Template>
 
-      <TerminalAnim/>
 
       <Template>
         <h1
@@ -122,11 +102,11 @@ export default function Home() {
         
         <div className='flex flex-col items-start justify-center gap-1 w-full'>
           <h1
-            className="text-xs text-background/50">
+            className="text-xs text-background/70">
             Still curious? Ask me anything.
           </h1>
 
-          <TextMorph className='text-lg font-semibold text-background/50'>
+          <TextMorph className='text-lg font-semibold text-background/70'>
             {text}
           </TextMorph>
           
@@ -145,13 +125,27 @@ export default function Home() {
       <Template>
         <h1
           className="text-md font-semibold">
+          Currently Playing
+        </h1>
+        <div className="flex flex-row gap-4 items-center justify-center">
+          <MusicCard></MusicCard>
+          <div className="flex flex-col">
+            <p className="font-medium">Riptide - Vance Joy</p>
+            <p className="text-xs text-background/70">Open in spotify</p>
+          </div>
+        </div>
+      </Template>
+
+      <Template>
+        <h1
+          className="text-md font-semibold">
           Where I am right now?
         </h1>
         
         <div className="flex flex-col items-start justify-start">
           {expNow.map((index, key) => (
             <div key={key} className="flex flex-row w-fit items-center text-sm font-medium">
-              <p className="text-xs min-w-32 text-background/50 font-normal">{index.time}</p>
+              <p className="text-xs min-w-32 text-background/70 font-normal">{index.time}</p>
               <div className="flex flex-row gap-4 items-center">
                 <Paragraph text={index.position}/>
                 <Link href={index.link}>
@@ -175,7 +169,7 @@ export default function Home() {
           <InfiniteSlider durationOnHover={125} gap={24}>
             <div className="flex flex-row gap-8">
               {techStacks.map((index, key) => (
-                <div key={key} className="flex flex-row gap-2 items-center text-xs text-background/50 anim h-6">
+                <div key={key} className="flex flex-row gap-2 items-center text-xs text-background/70 anim h-6">
                   <div className="w-4 h-4">
                     {index.icon}  
                   </div>
@@ -191,7 +185,7 @@ export default function Home() {
         <div
           className="text-md font-semibold flex flex-row justify-between w-full items-center">
           Read my mind
-          <Link className="text-background/50 hover:text-background text-xs anim w-fit" href={"https://medium.com/@mhmdrazn"}>See more</Link>
+          <Link className="text-background/70 hover:text-background text-xs anim w-fit" href={"https://medium.com/@mhmdrazn"}>See more</Link>
         </div>
         <div className="flex flex-col gap-2">
           {blog.map((index, key) => (
@@ -201,7 +195,7 @@ export default function Home() {
                   <h1 className="line-clamp-1 text-sm font-semibold text-background">
                     {index.title}
                   </h1>
-                  <p className="line-clamp-2 text-background/50 text-xs font-thin">
+                  <p className="line-clamp-2 text-background/70 text-xs font-thin">
                     {index.description}
                   </p>
                 </div>
@@ -217,7 +211,7 @@ export default function Home() {
         <div
           className="text-md font-semibold flex flex-row justify-between w-full items-center">
           Side Projects
-          <Link className="text-xs anim text-background/50 hover:text-background w-fit hover:text-background/" href={"/projects"}>See more</Link>
+          <Link className="text-xs anim text-background/70 hover:text-background w-fit hover:text-background/" href={"/projects"}>See more</Link>
         </div>
         <Paragraph text={"These are my passion projects, where I turn caffeine into code and dreams into apps. Think of them as my digital children, sometimes dysfunctional, but always full of potential."}/>
         <BentoGrid className="w-xl">
@@ -225,26 +219,6 @@ export default function Home() {
             <BentoCard key={idx} {...feature} />
           ))}
         </BentoGrid>
-      </Template>
-
-      <Template>
-        <div
-          className="text-md font-semibold flex flex-row justify-between w-full items-center">
-          My Little Corner
-          <Button variant={"ghost"} className="text-xs anim text-background/50 w-fit">See more</Button>
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          {projects.map((index, key) => (
-            <div key={key} className="flex flex-col gap-3 w-fit">
-              <div className="rounded-lg overflow-clip h-fit shadow-sm border">
-                <Link href={index.href}>
-                  <Image src={index.img} height={1000} width={1200} alt={index.title} className="saturate-50 hover:saturate-100 anim" unoptimized/>
-                </Link>
-              </div>  
-              <p className="text-xs text-background  ">{index.title}</p>
-            </div>
-          ))}
-        </div>
       </Template>
     </main>
   );
