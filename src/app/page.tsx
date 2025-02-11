@@ -50,10 +50,10 @@ export default function Home() {
             </p>
           </div>  
 
-          <div className="flex flex-row gap-10">
+          <div className="flex flex-wrap gap-5">
             {socialLinksDark.map((index, key) => {
               return (
-                <Link className="flex flex-row gap-3" key={key} href={index.href}>
+                <Link className="flex flex-col gap-3" key={key} href={index.href}>
                   <Button variant={"link"} className="anim p-0 text-background/70 text-xs">
                     {index.icon}
                     {index.name}
@@ -105,8 +105,8 @@ export default function Home() {
         </h1>
         <div className="flex flex-row gap-4 items-center justify-center">
           <MusicCard></MusicCard>
-          <div className="flex flex-col">
-            <p className="font-medium">Riptide - Vance Joy</p>
+          <div className="flex flex-col gap-1">
+            <p className="font-medium text-sm">Riptide - Vance Joy</p>
             <p className="text-xs text-background/70">Open in spotify</p>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function Home() {
           {blog.map((index, key) => (
             <Link href={index.href} key={key}>
               <div className="w-full border h-24 overflow-clip rounded-lg items-center group hover:shadow-sm flex flex-row gap-5 hover:bg-foreground/50 anim">
-                <div className="flex flex-col p-4 justify-start pl-6 group-hover:pl-8 anim w-4/5 md:w-2/3">
+                <div className="flex flex-col md:p-4 p-2 justify-start pl-4 group-hover:pl-8 anim w-3/5 md:w-2/3">
                   <h1 className="line-clamp-1 text-sm font-semibold text-background">
                     {index.title}
                   </h1>
@@ -175,7 +175,7 @@ export default function Home() {
                     {index.description}
                   </p>
                 </div>
-                <Image src={index.image} alt={index.title} width={210} height={70} className="w-1/5 h-24 md:w-1/3 object-cover group-hover:scale-110 anim"
+                <Image src={index.image} alt={index.title} width={210} height={70} className="w-2/5 h-24 md:w-1/3 object-cover group-hover:scale-110 anim"
                   style={{ maskImage: "linear-gradient(to right, transparent 0%, #000 70%)" }}/>
               </div>
             </Link>    

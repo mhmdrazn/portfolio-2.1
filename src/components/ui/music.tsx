@@ -8,7 +8,7 @@ const MusicCard = () => {
   const circles = Array.from({ length: 4 }, (_, index) => index);
 
   return (
-    <div className="relative h-16 w-16 overflow-hidden rounded-lg border bg-muted">
+    <div className="relative h-12 w-12 overflow-hidden rounded-lg border bg-muted">
       <Image
         fill
         src="/music/riptide.webp"
