@@ -1,6 +1,6 @@
 "use client"
 
-import { IconPhoneRinging,  IconSend } from "@tabler/icons-react";
+import { IconSend } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 import { socialLinksDark, techStacks, expNow, features } from "@/lib/data";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
@@ -14,15 +14,6 @@ import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
 import { Input } from "@/components/ui/input";
 import MusicCard from "@/components/ui/music";
-import SwipeButton from "@/components/ui/swipebutton";
-
-const links = [
-  {
-    href: "https://cal.com/hola-razan",
-    icon: IconPhoneRinging,
-    label: "Book a call",
-  },
-];
 
 const FeaturedProjects = features.slice(0, 2);
 
@@ -40,21 +31,6 @@ const blog = [
     image: "/blog/cpu.webp"
   },
 ]
-
-const AnimatedLink = ({ href, icon: Icon, label }: { href: string; icon: React.ElementType; label: string }) => (
-  <Link
-    href={href}
-    className="px-4 py-2 border anim rounded-xl w-fit hover:bg-foreground/70 md:text-sm text-xs flex flex-row gap-2 hover:text-background text-background/60 items-center group"
-  >
-    <Icon
-      className="anim-slow"
-      strokeWidth={2}
-      width={16}
-      height={16}
-    />
-    {label}
-  </Link>
-);
 
 export default function Home() {
   const [text, setText] = useState('');
