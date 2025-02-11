@@ -35,10 +35,10 @@ const blog = [
 export default function Home() {
   const [text, setText] = useState('');
   return (
-    <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-16'>
+    <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-12'>
 
       <Template>
-        <div className="flex flex-col gap-3 items-start w-full justify-start">
+        <div className="flex flex-col gap-4 items-start w-full justify-start">
           <AvatarStatus/>
           <div className="flex flex-col gap-2">
             <h1 className="font-medium text-lg">
@@ -54,17 +54,14 @@ export default function Home() {
             {socialLinksDark.map((index, key) => {
               return (
                 <Link className="flex flex-col gap-3" key={key} href={index.href}>
-                  <Button variant={"link"} className="anim p-0 text-background/70 text-xs">
+                  <div className="w-5 h-5 text-background/50 hover:text-background anim">
                     {index.icon}
-                    {index.name}
-                  </Button>
+                  </div>
                 </Link>
               );
             })}
           </div>
         </div>
-
-        {/* <SwipeButton className="border">Book a call</SwipeButton> */} 
       </Template>
 
 
@@ -107,7 +104,9 @@ export default function Home() {
           <MusicCard></MusicCard>
           <div className="flex flex-col gap-1">
             <p className="font-medium text-sm">Riptide - Vance Joy</p>
-            <p className="text-xs text-background/70">Open in spotify</p>
+            <Link href={"https://open.spotify.com/track/2uXlHCUbq9OMUwx3hrk06o?si=accccfd08b534459"}>
+              <p className="text-xs text-background/50 hover:text-background anim-fast">Open in spotify</p>
+            </Link>
           </div>
         </div>
       </Template>
@@ -167,7 +166,7 @@ export default function Home() {
           {blog.map((index, key) => (
             <Link href={index.href} key={key}>
               <div className="w-full border h-24 overflow-clip rounded-lg items-center group hover:shadow-sm flex flex-row gap-5 hover:bg-foreground/50 anim">
-                <div className="flex flex-col md:p-4 p-2 justify-start pl-4 group-hover:pl-8 anim w-3/5 md:w-2/3">
+                <div className="flex flex-col md:p-5 p-2 justify-start pl-4 group-hover:pl-7 anim w-3/5 md:w-2/3">
                   <h1 className="line-clamp-1 text-sm font-semibold text-background">
                     {index.title}
                   </h1>

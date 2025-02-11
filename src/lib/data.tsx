@@ -8,6 +8,7 @@ import {
     InstagramIcon, 
     MediumIcon, 
     MediumIconDark } from '@/components/ui/icons';
+import { IconBriefcase, IconFileCertificate } from '@tabler/icons-react';
 import Image from 'next/image';
 
 import StackIcon from 'tech-stack-icons';
@@ -21,10 +22,12 @@ export const socialLinks = [
 ]
 
 export const socialLinksDark = [
+    {href: "https://www.medium.com/@mhmdrazn", icon: <MediumIconDark/>, name: "Medium"},
     {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIconDark/>, name: "Linkedin"},
     {href: "https://github.com/mhmdrazn", icon: <GithubIconDark/>, name: "GitHub"},
     {href: "https://www.behance.net/mhmdrazn", icon: <BehanceIconDark/>, name: "Behance"},
-    {href: "https://www.medium.com/@mhmdrazn", icon: <MediumIconDark/>, name: "Medium"},
+    {href: "https://www.papermark.io/view/cm5wdh7xe00061av5ktxo0aus", icon: <IconBriefcase className='w-full h-full' stroke={1}/>, name: "Portfolio"},
+    {href: "https://www.papermark.io/view/cm5wdajh5000u14d79vznrkb1", icon: <IconFileCertificate className='w-full h-full' stroke={1}/>, name: "Resume"}
 ]
 
 export const action = [

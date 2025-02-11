@@ -10,7 +10,7 @@ export const LinkedinIcon = () => {
 
 export const LinkedinIconDark = () => {
     return (
-        <Linkedin strokeWidth={1}/>
+        <Linkedin strokeWidth={1} className='h-full w-full'/>
     )
 }
 
@@ -40,7 +40,7 @@ export const BehanceIcon = () => {
 
 export const BehanceIconDark = () => {
     return (
-        <IconBrandBehance stroke={1} width={30} height={30}/>
+        <IconBrandBehance stroke={1} width={30} height={30} className='h-full w-full'/>
     )
 }
 
@@ -106,7 +106,7 @@ export const MediumIcon = () => {
 
 export const MediumIconDark = () => {
     return (
-        <FaMedium strokeWidth={2} width={28} height={28}/>
+        <FaMedium strokeWidth={2} width={28} height={28} className='h-full w-full'/>
     )
 }
 

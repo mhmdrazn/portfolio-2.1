@@ -5,6 +5,7 @@ import { ReactLenis } from "@/lib/lenis";
 import "./globals.css";
 import Footer from "@/components/sections/footer";
 import Dock from "@/components/ui/dock";
+import NextTopLoader from "nextjs-toploader";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -26,6 +27,17 @@ export default function RootLayout({
     className=" overflow-y-auto [&::-webkit-scrollbar]:w-0">
       <ReactLenis root>
         <body className={figtree.className}>
+          <NextTopLoader
+              color="#181C14"
+              initialPosition={0.08}
+              easing="ease"
+              speed={300}
+              showSpinner={false}
+              height={4}
+              shadow="0 0 20px #181C14, 0 0 15px #181C14"
+              zIndex={100}
+            />
+          <div className="pointer-events-none fixed left-0 top-0 z-50 h-8 w-full bg-gradient-to-b from-white to-transparent md:h-12 lg:h-16" />
           {children}
           <Toaster />
             <div 

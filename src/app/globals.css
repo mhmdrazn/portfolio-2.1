@@ -6,6 +6,10 @@ body {
   font-family: 'Figtree', sans-serif;
 }
 
+* {
+  user-select: auto;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -35,8 +39,9 @@ body {
   }
 
   ::selection {
-    background: hsl(var(--selection));
+    background-color: #fff2ce;
   }
+  
 }
 
 @layer base {

@@ -7,7 +7,7 @@ interface Paragraph {
 
 const Paragraph: React.FC<Paragraph> = ({ text }) => {
     return (
-        <h1 className='anim text-background/50 hover:text-background text-xs md:text-sm w-fit text-justify'>
+        <h1 className='anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify'>
             {text}
         </h1>
     );
