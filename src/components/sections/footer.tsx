@@ -15,7 +15,12 @@ export default function Footer() {
         <footer className='flex w-full h-fit px-4 pt-12 md:pb-32 md:px-8 lg:px-16 justify-center items-center bg-background'>
             <div className='flex flex-col max-w-3xl w-full gap-4 justify-between'>
                 <div className='flex flex-col md:flex-row md:justify-between justify-center items-center gap-6 md:gap-0 pw-full'>
-                    <Image src='/slash.svg' alt='logo' width={60} height={42.06}/>
+                    <Image 
+                        src='/slash.svg' 
+                        className='w-12 h-12' 
+                        alt='logo' 
+                        width={60} 
+                        height={42.06}/>
                     <div className='flex flex-row gap-6 items-center'>
                         <button 
                             onClick={() => {
@@ -30,7 +35,10 @@ export default function Footer() {
                         </button>
 
                         {socialLinks.map((maps, index) => (
-                            <Link key={index} href={maps.href} className='size-fit'>
+                            <Link 
+                                key={index} 
+                                href={maps.href} 
+                                className='size-fit'>
                                 {maps.icon}
                             </Link>
                         ))}
@@ -50,7 +58,10 @@ export default function Footer() {
                             <p className='font-medium text-foreground'>Actions</p>
                             <div className='flex flex-col justify-center items-center md:justify-end md:items-end gap-2'>
                                 {action.map((maps, index) => (
-                                    <Link key={index} href={maps.href} className="anim text-sm text-white/40 hover:text-white">
+                                    <Link 
+                                        key={index} 
+                                        href={maps.href} 
+                                        className="anim text-sm text-white/40 hover:text-white">
                                         {maps.label}
                                     </Link>
                                 ))}
@@ -60,7 +71,10 @@ export default function Footer() {
                             <p className='font-medium text-foreground'>Quick Links</p>
                             <div className='flex flex-col justify-center items-center md:justify-end md:items-end gap-2'>
                                 {quickLinks.map((maps, index) => (
-                                    <Link key={index} href={maps.href} className="anim text-sm text-white/40 hover:text-white">
+                                    <Link 
+                                        key={index} 
+                                        href={maps.href} 
+                                        className="anim text-sm text-white/40 hover:text-white">
                                         {maps.label}
                                     </Link>
                                 ))}

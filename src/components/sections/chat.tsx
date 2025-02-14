@@ -54,11 +54,15 @@ function Chat() {
                 <Input
                     type='text'
                     value={text}
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter") handleSend();
+                    }}
                     onChange={(e) => setText(e.target.value)}
-                    placeholder='Is razan has a gf right now?'
+                    placeholders={["Does Razan have a girlfriend now?", "Who is Razan?", "What is Razan doing right now?"]}
                     disabled={loading}
                     />
                 <Button 
+                    disabled={loading}
                     onClick={handleSend} 
                     type='submit' 
                     className="w-fit anim">
@@ -71,7 +75,7 @@ function Chat() {
                         className="text-xs text-background/50">
                         Response
                     </h1>
-                    <div className="mt-1 text-sm text-background w-full">
+                    <div className="mt-1 text-sm text-background/80 w-full text-justify">
                         {response}
                     </div>
                 </div>    

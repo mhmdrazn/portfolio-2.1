@@ -235,12 +235,6 @@ export const expNow = [
         company: "/exp/ajakgerak.svg",
         link: "https://linkedin.com/company/ajakgerak"
     },
-    // {
-    //     time: "Oct 24 - Now",
-    //     position: "Lead UI/UX Designer",
-    //     company: "/exp/futurest.svg",
-    //     link: "https://linkedin.com/company/futurest"
-    // },
     {
         time: "Nov 24 - Now",
         position: "Lead UI/UX Designer",
@@ -300,7 +294,7 @@ export const features = [
                 className="object-cover absolute top-0"
                 style={{ maskImage: "linear-gradient(to top, transparent 40%, #000 100%)" }}
                 alt={"buangbijak"}>
-            </Image>
+            </Image> 
         )
     },
     {
@@ -336,3 +330,48 @@ export const features = [
         )
     },
 ];
+
+// Biography to provide context for Gemini
+export const userBio = `
+    Muhammad Razan Parisya Putra is a fourth-semester Information Systems student at Institut Teknologi Sepuluh Nopember (ITS). He is a passionate and dedicated UI/UX Designer based in Surabaya, Indonesia. Razan has interest in UI/UX & Product Design, Software Engineering, and Product management. With over two years of experience in crafting digital products and interactive experiences, Razan specializes in creating seamless, intuitive, and visually appealing user interfaces. At just 19 years old, he is younger than most of his peers but has already made significant strides in the tech and design world.
+    He has a strong passion for creating innovative solutions that enhance user experiences and drive business growth.
+    Razan’s work is driven by creativity, user-centered design principles, and technical proficiency in modern front-end frameworks. He is deeply committed to designing solutions that not only look great but also solve real-world problems, encapsulated in his personal motto: “Design, Develop, Delight.”
+    Work and Experiences
+    Razan has taken on key roles in various organizations and projects, showcasing his leadership, collaboration, and problem-solving skills. He currently serves as a UI/UX Designer in IT Development at the Society of Renewable Energy (SRE) ITS, where he contributes to energy-related digital innovations.
+    His professional journey includes:
+    Product Designer at AjakGerak: A widely recognized educational platform with over 50,000 followers. Razan revamped the content strategy and handled media partnerships, significantly boosting engagement and outreach. He also led the Beasiswa GerakBerdampak initiative, a collaborative program between AjakGerak and Kahf. This program provides scholarships, mentorship, and academic support to high school students from 3T regions (tertinggal, terdepan, terluar), helping them achieve their university dreams.
+    Lead UI/UX Designer at Futurest, TEDxITS, and BetaU: He led design teams to create visually compelling digital experiences for high-profile events and software projects.
+    UI/UX Designer at Ini Lho ITS, SRE ITS, and Information System Expo! 2024: Razan designed interactive platforms that enhanced audience engagement and participation.
+    Projects
+    Razan has been involved in numerous impactful projects across diverse industries:
+    Lokantara: A tourism platform that enhances travel experiences with interactive guides, currency converters, and gamified engagement. Razan’s expertise in Next.js, Tailwind CSS, and Framer Motion helped create a seamless and visually appealing user experience.
+    URide: A vehicle health monitoring and on-demand repair service platform. Razan focused on improving usability and accessibility, ensuring transparency and convenience for users.
+    Aimo: A mental health app for expectant mothers, designed to reduce postpartum depression (PPD) risks. The app provides personalized postnatal guidance and a support system for families and healthcare professionals.
+    Tech Stacks
+    Razan’s technical expertise spans a wide range of tools and technologies:
+    Front-End Development: Next.js, React.js, Tailwind CSS, TypeScript
+    Mobile Development: Flutter, Dart, Android Studio
+    UI/UX Design: Figma, Sketch, Framer Motion
+    Prototyping & Animation: Framer Motion, Lottie
+    Database: Firebase, Supabase
+    Programming Languages: Java, JavaScript, TypeScript, Python, Dart 
+    Management Tools: Miro, Slack, Notion
+    His ability to combine creativity with technical execution allows him to bridge the gap between design and development seamlessly.
+    Achievements
+    Razan’s dedication and talent have been recognized through several achievements:
+    Awarded the Beasiswa Bakti BCA 2025 for his outstanding contributions and potential.
+    Future Careers
+    Looking ahead, Razan aspires to become a leading UI/UX designer, product designer, or project manager in the tech industry. His goals include:
+    Developing impactful digital experiences that solve real-world problems, guided by his motto: “Design, Develop, Delight.”
+    Expanding his expertise in front-end development, interaction design, and project management.
+    Working on projects that combine AI, data science, and user experience.
+    Securing internship opportunities in UI/UX design, product design, and project management to further refine his skills and contribute to innovative projects.
+    Funny Things
+    When he’s not designing or coding, Razan enjoys sharing his knowledge and experiences through writing. He plans to actively write on Medium (@mhmdrazn), discussing topics related to UI/UX design, product development, and IT fields.
+    On a lighter note, Razan is currently single and focusing on his career and personal growth. As he often jokes, “My only relationship right now is with Figma and Next.js!” His favorite food is rendang, and he’s always up for a good food adventure.
+    Let’s Connect!
+    You can catch Razan on:
+    Instagram, Medium, Github, Behance on @mhmdrazn, LinkedIn: Muhammad Razan Parisya Putra, Email razan4944@gmail.com
+    This project was build using Next.js, Tailwind CSS, and Shadcn/ui, poweered by Vercel and Gemini AI.
+    The model used is Gemini 2.0 Flash. 
+`;

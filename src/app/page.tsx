@@ -1,25 +1,19 @@
 "use client"
 
-import { IconSend } from "@tabler/icons-react";
-import { Button } from "@/components/ui/button";
-import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { TextMorph } from "@/components/ui/text-morph";
-import Chat from "@/components/sections/chat";
-import { useState } from 'react';
 import Image from "next/image";
-import AvatarStatus from "@/components/ui/avatarstatus";
 import Link from "next/link";
+import AvatarStatus from "@/components/ui/avatarstatus";
+import Chat from "@/components/sections/chat";
 import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
-import { Input } from "@/components/ui/input";
 import MusicCard from "@/components/ui/music";
+import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { 
   socialLinksDark, 
   techStacks, 
   expNow, 
   features } 
 from "@/lib/data";
-
 import { 
   BentoGrid, 
   BentoCard } 
@@ -43,7 +37,6 @@ const blog = [
 ]
 
 export default function Home() {
-  const [text, setText] = useState('');
   return (
     <main 
       className='flex flex-col min-h-screen w-full justify-start,
@@ -66,7 +59,10 @@ export default function Home() {
           <div className="flex flex-wrap gap-5">
             {socialLinksDark.map((index, key) => {
               return (
-                <Link className="flex flex-col gap-3" key={key} href={index.href}>
+                <Link 
+                  className="flex flex-col gap-3" 
+                  key={key} 
+                  href={index.href}>
                   <div className="w-5 h-5 text-background/50 hover:text-background anim">
                     {index.icon}
                   </div>
@@ -91,7 +87,6 @@ export default function Home() {
             className="text-xs text-background/70">
             Still curious? Ask me anything.
           </h1>
-
           <Chat/>
         </div>
       </Template>
@@ -121,11 +116,18 @@ export default function Home() {
         <div className="flex flex-col items-start justify-start">
           {expNow.map((index, key) => (
             <div key={key} className="flex flex-row w-fit items-center text-sm font-medium">
-              <p className="text-xs min-w-32 text-background/70 font-normal">{index.time}</p>
+              <p className="text-xs min-w-32 text-background/70 font-normal">
+                {index.time}
+              </p>
               <div className="flex flex-row gap-4 items-center">
                 <Paragraph text={index.position}/>
                 <Link href={index.link}>
-                  <Image src={index.company} alt={index.link} height={15} width={55}></Image>
+                  <Image 
+                    src={index.company}
+                    alt={index.link} 
+                    height={15} 
+                    className="h-12"
+                    width={55}></Image>
                 </Link>
               </div>
             </div>

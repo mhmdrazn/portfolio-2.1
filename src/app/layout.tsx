@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster"
 import { ReactLenis } from "@/lib/lenis";
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import Footer from "@/components/sections/footer";
 import Dock from "@/components/ui/dock";
@@ -39,6 +40,7 @@ export default function RootLayout({
             />
           <div className="pointer-events-none fixed left-0 top-0 z-50 h-8 w-full bg-gradient-to-b from-white to-transparent md:h-12 lg:h-16" />
           {children}
+          <Analytics/>
           <Toaster />
             <div 
             className="fixed bottom-0 left-1/2 transform -translate-x-1/2 my-8 w-fit h-fit justify-center items-center">
