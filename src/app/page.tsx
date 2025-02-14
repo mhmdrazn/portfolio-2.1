@@ -2,10 +2,9 @@
 
 import { IconSend } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
-import { socialLinksDark, techStacks, expNow, features } from "@/lib/data";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { TextMorph } from "@/components/ui/text-morph";
-import { BentoGrid , BentoCard } from "@/components/ui/bento";
+import Chat from "@/components/sections/chat";
 import { useState } from 'react';
 import Image from "next/image";
 import AvatarStatus from "@/components/ui/avatarstatus";
@@ -14,6 +13,17 @@ import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
 import { Input } from "@/components/ui/input";
 import MusicCard from "@/components/ui/music";
+import { 
+  socialLinksDark, 
+  techStacks, 
+  expNow, 
+  features } 
+from "@/lib/data";
+
+import { 
+  BentoGrid, 
+  BentoCard } 
+from "@/components/ui/bento";
 
 const FeaturedProjects = features.slice(0, 2);
 
@@ -35,7 +45,9 @@ const blog = [
 export default function Home() {
   const [text, setText] = useState('');
   return (
-    <main className='flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-12'>
+    <main 
+      className='flex flex-col min-h-screen w-full justify-start,
+      p-6 pt-8 md:p-12 lg:p-20 items-center gap-12'>
 
       <Template>
         <div className="flex flex-col gap-4 items-start w-full justify-start">
@@ -46,7 +58,8 @@ export default function Home() {
             </h1>
             <p
               className="anim text-background/70 text-xs md:text-sm">
-              A student by day, a creative thinker, and a moody writer by night. Sometimes do design, sometimes code, and sometimes write. 
+              A student by day, a creative thinker, and a moody writer by night. 
+              Sometimes do design, sometimes code, and sometimes write. 
             </p>
           </div>  
 
@@ -73,25 +86,13 @@ export default function Home() {
         
         <Paragraph text={"I'm Muhammad Razan, but you can call me Razan. Currently an undergraduate Information Systems student @ITS. I'm a curious designer, coder, and maybe even a storyteller (though I’m not so sure about that, lol). I have a strong interest in Product Management, Software Development, and Design. Based in Surabaya, Indonesia."}/> 
         
-        <div className='flex flex-col items-start justify-center gap-1 w-full'>
+        <div className='flex flex-col items-start justify-center w-full'>
           <h1
             className="text-xs text-background/70">
             Still curious? Ask me anything.
           </h1>
 
-          <TextMorph className='text-lg font-semibold text-background/70'>
-            {text}
-          </TextMorph>
-          
-          <div className="flex flex-row gap-2 w-full">
-            <Input
-              type='text'
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-              placeholder='Type your text here'
-              />
-            <Button variant={"outline"} className="w-fit"><IconSend/></Button>
-          </div>
+          <Chat/>
         </div>
       </Template>
 
@@ -194,6 +195,14 @@ export default function Home() {
             <BentoCard key={idx} {...feature} />
           ))}
         </BentoGrid>
+      </Template>
+
+      <Template>
+        <div
+          className="text-md font-semibold flex flex-row justify-between w-full items-center">
+          Credits
+        </div>
+        <h1 className="text-background/50 text-xs md:text-sm w-fit text-justify">This page was crafted by Razan, drawing inspiration from <span className="text-background/70 anim hover:text-background"><Link href={"https://msaf.tech"}>@msaf.tech</Link></span>. Some components are sourced from <span className="text-background/70 anim hover:text-background"><Link href={"https://ui.msaf.tech"}>ui.msaf.tech.</Link></span></h1>
       </Template>
     </main>
   );

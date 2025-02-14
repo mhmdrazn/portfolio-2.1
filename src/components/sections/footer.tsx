@@ -15,7 +15,7 @@ export default function Footer() {
         <footer className='flex w-full h-fit px-4 pt-12 md:pb-32 md:px-8 lg:px-16 justify-center items-center bg-background'>
             <div className='flex flex-col max-w-3xl w-full gap-4 justify-between'>
                 <div className='flex flex-col md:flex-row md:justify-between justify-center items-center gap-6 md:gap-0 pw-full'>
-                    <Image src='/mark.svg' alt='logo' width={60} height={42.06}/>
+                    <Image src='/slash.svg' alt='logo' width={60} height={42.06}/>
                     <div className='flex flex-row gap-6 items-center'>
                         <button 
                             onClick={() => {
@@ -38,11 +38,8 @@ export default function Footer() {
                 </div>
                 
 
-                <div className='flex flex-col md:flex-row gap-8 justify-center items-center md:justify-between md:items-start h-full'>        
-                    <div className='flex flex-col justify-around items-start w-fit md:gap-16'>
-                        <p className='text-sm text-white/50 md:text-left text-center font-thin'>
-                            Lets <i className='text-white/60 font-medium'>design, develop, and delight</i><br/>everyone with Ideas.
-                        </p>
+                <div className='flex flex-col md:flex-row gap-8 justify-center md:justify-between md:items-end h-full'>        
+                    <div className='flex flex-col items-start md:gap-16 h-full justify-end'>
                         <p className='hidden md:block font-thin text-sm text-center pt-3 md:text-left text-foreground'>
                             &copy; 2025 Muhammad Razan. All rights reserved.
                         </p>
