@@ -1,8 +1,13 @@
 import React from 'react';
+import { Metadata } from 'next';
 import { BentoGrid, BentoCard } from '@/components/ui/bento';
 import { features } from "@/lib/data";
 import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
+
+export const metadata : Metadata = {
+    title: 'Projects',
+}
 
 function Projects() {
     return (

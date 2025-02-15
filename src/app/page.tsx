@@ -18,6 +18,12 @@ import {
   BentoGrid, 
   BentoCard } 
 from "@/components/ui/bento";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const FeaturedProjects = features.slice(0, 2);
 
@@ -55,7 +61,7 @@ export default function Home() {
               Sometimes do design, sometimes code, and sometimes write. 
             </p>
           </div>  
-
+          
           <div className="flex flex-wrap gap-5">
             {socialLinksDark.map((index, key) => {
               return (
@@ -64,7 +70,16 @@ export default function Home() {
                   key={key} 
                   href={index.href}>
                   <div className="w-5 h-5 text-background/50 hover:text-background anim">
-                    {index.icon}
+                    <TooltipProvider delayDuration={0}>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          {index.icon}
+                        </TooltipTrigger>
+                        <TooltipContent className="dark px-2 py-1 text-xs" showArrow={false}>
+                          {index.name}
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   </div>
                 </Link>
               );

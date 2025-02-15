@@ -1,10 +1,14 @@
 import React from 'react'
-
+import { Metadata } from 'next'
 import Heading from '@/components/ui/heading'
 import Paragraph from '@/components/ui/paragraph'
 
 import Card from '@/components/ui/exp-card'
 import Template from '@/components/ui/template'
+
+export const metadata : Metadata = {
+  title: 'Journey',
+}
 
 function Journey() {
   return (

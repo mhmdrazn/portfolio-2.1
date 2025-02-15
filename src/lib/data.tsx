@@ -1,14 +1,18 @@
 import { 
     LinkedinIcon, 
-    LinkedinIconDark, 
     GithubIcon, 
-    GithubIconDark, 
-    BehanceIcon, 
-    BehanceIconDark, 
     InstagramIcon, 
-    MediumIcon, 
-    MediumIconDark } from '@/components/ui/icons';
-import { IconBriefcase, IconFileCertificate } from '@tabler/icons-react';
+    MediumIcon,
+    BehanceIcon, 
+    } from '@/components/ui/icons';
+import { 
+    IconBriefcase, 
+    IconBrandGithub, 
+    IconBrandBehance, 
+    IconFileCertificate 
+} from '@tabler/icons-react';
+import { Linkedin } from 'lucide-react'
+import { FaMedium } from "react-icons/fa6";
 import Image from 'next/image';
 
 import StackIcon from 'tech-stack-icons';
@@ -22,12 +26,31 @@ export const socialLinks = [
 ]
 
 export const socialLinksDark = [
-    {href: "https://www.medium.com/@mhmdrazn", icon: <MediumIconDark/>, name: "Medium"},
-    {href: "https://linkedin.com/in/muhammadrazan", icon: <LinkedinIconDark/>, name: "Linkedin"},
-    {href: "https://github.com/mhmdrazn", icon: <GithubIconDark/>, name: "GitHub"},
-    {href: "https://www.behance.net/mhmdrazn", icon: <BehanceIconDark/>, name: "Behance"},
-    {href: "https://www.papermark.io/view/cm5wdh7xe00061av5ktxo0aus", icon: <IconBriefcase className='w-full h-full' stroke={1}/>, name: "Portfolio"},
-    {href: "https://www.papermark.io/view/cm5wdajh5000u14d79vznrkb1", icon: <IconFileCertificate className='w-full h-full' stroke={1}/>, name: "Resume"}
+    {
+        href: "https://www.medium.com/@mhmdrazn", 
+        icon: <FaMedium strokeWidth={2} width={28} height={28} className='h-full w-full'/>, 
+        name: "Medium"
+    },
+    {
+        href: "https://linkedin.com/in/muhammadrazan", 
+        icon: <Linkedin strokeWidth={1} className='h-full w-full'/>, 
+        name: "LinkedIn"},
+    {
+        href: "https://github.com/mhmdrazn", 
+        icon: <IconBrandGithub stroke={1.25} className='h-full w-full'/>, 
+        name: "GitHub"},
+    {
+        href: "https://www.behance.net/mhmdrazn",
+        icon: <IconBrandBehance stroke={1} width={30} height={30} className='h-full w-full'/>, 
+        name: "Behance"},
+    {
+        href: "https://www.papermark.io/view/cm5wdh7xe00061av5ktxo0aus", 
+        icon: <IconBriefcase className='w-full h-full' stroke={1}/>, 
+        name: "Portfolio"},
+    {
+        href: "https://www.papermark.io/view/cm5wdajh5000u14d79vznrkb1", 
+        icon: <IconFileCertificate className='w-full h-full' stroke={1}/>, 
+        name: "Resume"}
 ]
 
 export const action = [

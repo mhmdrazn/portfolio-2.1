@@ -14,8 +14,28 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Razan | Personal Website",
-  description: "UI/UX and Product Designer",
+  title: {
+    default : "Razan | Product Designer",
+    template : "Razan | %s"
+  },
+  description: "A person who loves to move a pixel, call it Designer.",
+  keywords : [
+    "Razan", 
+    "Muhammad Razan",
+    "Muhammad Razan Parisya Putra",
+    "mhmdrazn",
+    "mhmdrazn",
+    "designer",
+    "product designer",
+    "ui designer",
+    "ux designer",
+    "web designer",
+    "web developer",
+    "creative",
+    "product manager",
+    "project manager",
+    "website",
+  ]
 };
 
 export default function RootLayout({

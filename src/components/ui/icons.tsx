@@ -8,21 +8,9 @@ export const LinkedinIcon = () => {
     )
 }
 
-export const LinkedinIconDark = () => {
-    return (
-        <Linkedin strokeWidth={1} className='h-full w-full'/>
-    )
-}
-
 export const GithubIcon = () => {
     return (
         <IconBrandGithub stroke={1.25} className='h-full w-full text-foreground'/>
-    )
-}
-
-export const GithubIconDark = () => {
-    return (
-        <IconBrandGithub stroke={1.25} className='h-full w-full'/>
     )
 }
 
@@ -35,12 +23,6 @@ export const MailIcon = () => {
 export const BehanceIcon = () => {
     return (
         <IconBrandBehance stroke={1} width={30} height={30} className='text-foreground'/>
-    )
-}
-
-export const BehanceIconDark = () => {
-    return (
-        <IconBrandBehance stroke={1} width={30} height={30} className='h-full w-full'/>
     )
 }
 
@@ -101,12 +83,6 @@ export const Laptop = () => {
 export const MediumIcon = () => {
     return (
         <FaMedium strokeWidth={2} className='text-white' width={28} height={28}/>
-    )
-}
-
-export const MediumIconDark = () => {
-    return (
-        <FaMedium strokeWidth={2} width={28} height={28} className='h-full w-full'/>
     )
 }
 
