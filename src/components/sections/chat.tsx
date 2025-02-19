@@ -58,7 +58,7 @@ function Chat() {
                         if (e.key === "Enter") handleSend();
                     }}
                     onChange={(e) => setText(e.target.value)}
-                    placeholders={["Does Razan have a girlfriend?", "Who is Razan?", "What is Razan doing right now?"]}
+                    placeholders={["Does Razan has a girlfriend?", "Who is Razan?", "What is Razan doing right now?"]}
                     disabled={loading}
                     />
                 <Button 
