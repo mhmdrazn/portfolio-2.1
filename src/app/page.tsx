@@ -6,7 +6,8 @@ import AvatarStatus from "@/components/ui/avatarstatus";
 import Chat from "@/components/sections/chat";
 import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
-import MusicCard from "@/components/ui/music";
+// import Spotify from "@/components/sections/spotify";
+import TrackCard from "@/components/sections/track";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { 
   socialLinksDark, 
@@ -26,6 +27,8 @@ import {
 } from "@/components/ui/tooltip";
 
 const FeaturedProjects = features.slice(0, 2);
+
+console.log("Refresh Token:", process.env.SPOTIFY_REFRESH_TOKEN);
 
 const blog = [
   {
@@ -105,22 +108,9 @@ export default function Home() {
           <Chat/>
         </div>
       </Template>
-
-      <Template>
-        <h1
-          className="text-md font-semibold">
-          Currently Playing
-        </h1>
-        <div className="flex flex-row gap-4 items-center justify-center">
-          <MusicCard></MusicCard>
-          <div className="flex flex-col gap-1">
-            <p className="font-medium text-sm">Riptide - Vance Joy</p>
-            <Link href={"https://open.spotify.com/track/2uXlHCUbq9OMUwx3hrk06o?si=accccfd08b534459"}>
-              <p className="text-xs text-background/50 hover:text-background anim-fast">Open in spotify</p>
-            </Link>
-          </div>
-        </div>
-      </Template>
+{/* 
+      <Spotify/> */}
+      <TrackCard/>
 
       <Template>
         <h1

@@ -1,21 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
 
-const MusicCard = () => {
+type MusicCardProps = {
+  imageUrl: string;
+  alt : string;
+};
+
+const MusicCard = ({imageUrl, alt}: MusicCardProps) => {
   const circles = Array.from({ length: 4 }, (_, index) => index);
 
   return (
-    <div className="relative h-12 w-12 overflow-hidden rounded-lg border bg-muted">
+    <div className="relative size-12 md:size-14 overflow-hidden rounded-lg border bg-muted">
       <Image
         fill
-        src="/music/riptide.webp"
-        alt="Album cover"
+        src={imageUrl}
+        alt={alt}
         className="h-full w-full object-cover brightness-50"
       />
-      <div className="absolute z-10 flex h-full w-full items-end justify-center gap-x-[3px] p-2 bg-blend-difference">
+      <div className="absolute z-10 flex h-full w-full items-end justify-center gap-x-[3px] p-1.5 bg-blend-difference">
         {circles.map((index) => (
           <motion.div
             key={index}

@@ -70,19 +70,6 @@ export const quickLinks = [
 
 export const experiences = [
     {
-        position: "UI/UX Designer",
-        company: "Beta U",
-        date: "Jun 2024 - Now",
-        link: "https://www.linkedin.com/company/beta-u",
-        description : "BETA U is a dynamic Software House specializing in transforming ideas into Minimum Viable Products (MVPs) swiftly and creatively. With a keen understanding of project intricacies, BETA U collaborates closely with clients to bring their visions to life.",
-        img: "/exp/betaulogo.svg",
-        job: [
-            "Designing and implementing user-friendly interfaces for web and mobile applications.",
-            "Collaborating with cross-functional teams to gather requirements and translate them into intuitive designs.",
-            "Conducting user research and testing to ensure the designs meet user needs and preferences.",
-        ]
-    },
-    {
         position: "Product Designer",
         company: "AjakGerak",
         date: "Jan 2024 - Now",
@@ -136,6 +123,19 @@ export const experiences = [
     },
     {
         position: "UI/UX Designer",
+        company: "Beta U",
+        date: "Jun 2024 - Feb 2025",
+        link: "https://www.linkedin.com/company/beta-u",
+        description : "BETA U is a dynamic Software House specializing in transforming ideas into Minimum Viable Products (MVPs) swiftly and creatively. With a keen understanding of project intricacies, BETA U collaborates closely with clients to bring their visions to life.",
+        img: "/exp/betaulogo.svg",
+        job: [
+            "Designing and implementing user-friendly interfaces for web and mobile applications.",
+            "Collaborating with cross-functional teams to gather requirements and translate them into intuitive designs.",
+            "Conducting user research and testing to ensure the designs meet user needs and preferences.",
+        ]
+    },
+    {
+        position: "UI/UX Designer",
         company: "Ini Lho ITS",
         date: "Apr 2024 - Des 24",
         link: "https://www.ini.lho.its.ac.id/",
@@ -151,7 +151,7 @@ export const experiences = [
     {
         position: "UI/UX Designer",
         company: "ISE!",
-        date: "Jun - Oct 2024",
+        date: "Jun 2024 - Oct 2024",
         link: "https://www.ise-its.com/",
         description : "Information Systems Expo (ISE!) is an annual event organized by the Himpunan Mahasiswa Sistem Informasi (HMSI) which consists of a series of events in the fields of technology and business. ISE! aims to introduce the ITS Information Systems Department to the wider community through various works and achievements.",
         img: "/exp/ise.svg",
