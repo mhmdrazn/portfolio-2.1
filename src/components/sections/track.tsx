@@ -25,9 +25,9 @@ const TrackCard = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     key={track.id}
-                    className="flex items-center gap-x-3"
+                    className="flex items-center gap-x-4"
                 >
-                <div className="relative size-12 shrink-0 overflow-hidden rounded-sm bg-red md:size-14">
+                <div className="relative size-12 shrink-0 overflow-hidden rounded-sm bg-red">
                     <MusicCard imageUrl={track.album.images[0].url} alt={track.name}/>
                     <Image
                     src={track.album.images[0].url}

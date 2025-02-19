@@ -12,7 +12,7 @@ const MusicCard = ({imageUrl, alt}: MusicCardProps) => {
   const circles = Array.from({ length: 4 }, (_, index) => index);
 
   return (
-    <div className="relative size-12 md:size-14 overflow-hidden rounded-lg border bg-muted">
+    <div className="relative size-12 overflow-hidden rounded-lg bg-muted">
       <Image
         fill
         src={imageUrl}
