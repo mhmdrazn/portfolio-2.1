@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+export const nextConfig = {
     images: {
         domains: ['i.scdn.co'],
     }
 };
 
-module.exports = {
+const config = {
     async redirects() {
         return [
         {
@@ -34,4 +34,4 @@ module.exports = {
     },
 };
 
-export default nextConfig;
+export default config;
