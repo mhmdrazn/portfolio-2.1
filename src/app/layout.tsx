@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import Footer from "@/components/sections/footer";
 import Dock from "@/components/ui/dock";
+import Head from "next/head";
 import NextTopLoader from "nextjs-toploader";
 
 const figtree = Figtree({
@@ -47,6 +48,9 @@ export default function RootLayout({
     <html lang="en" suppressContentEditableWarning 
     className=" overflow-y-auto [&::-webkit-scrollbar]:w-0">
       <ReactLenis root>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </Head>
         <body className={figtree.className}>
           <NextTopLoader
               color="#181C14"
