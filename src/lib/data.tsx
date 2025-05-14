@@ -253,6 +253,12 @@ export const techStacks = [
 
 export const expNow = [
     {
+        time: "April 25 - Now",
+        position: "Lead UI/UX Designer",
+        company: "/exp/ise.svg",
+        link: "https://www.linkedin.com/company/information-systems-expo-its/"
+    },
+    {
         time: "Jan 24 - Now",
         position: "Product Designer",
         company: "/exp/ajakgerak.svg",

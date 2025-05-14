@@ -7,7 +7,7 @@ import Chat from "@/components/sections/chat";
 import Template from "@/components/ui/template";
 import Paragraph from "@/components/ui/paragraph";
 // import Spotify from "@/components/sections/spotify";
-import TrackCard from "@/components/sections/track";
+// import TrackCard from "@/components/sections/track";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { 
   socialLinksDark, 
@@ -110,7 +110,7 @@ export default function Home() {
       </Template>
 {/* 
       <Spotify/> */}
-      <TrackCard/>
+      {/* <TrackCard/> */}
 
       <Template>
         <h1
