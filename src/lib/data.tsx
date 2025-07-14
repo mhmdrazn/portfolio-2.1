@@ -83,9 +83,36 @@ export const experiences = [
         ]
     },
     {
+        position: "UI/UX Designer",
+        company: "Beta U",
+        date: "Jun 2024 - Now",
+        link: "https://www.linkedin.com/company/beta-u",
+        description : "BETA U is a dynamic Software House specializing in transforming ideas into Minimum Viable Products (MVPs) swiftly and creatively. With a keen understanding of project intricacies, BETA U collaborates closely with clients to bring their visions to life.",
+        img: "/exp/betaulogo.svg",
+        job: [
+            "Designing and implementing user-friendly interfaces for web and mobile applications.",
+            "Collaborating with cross-functional teams to gather requirements and translate them into intuitive designs.",
+            "Conducting user research and testing to ensure the designs meet user needs and preferences.",
+        ]
+    },
+    {
+        position: "Lead UI/UX Designer",
+        company: "ISE!",
+        date: "Jun 2024 - Now",
+        link: "https://www.ise-its.com/",
+        description : "Information Systems Expo (ISE!) is an annual event organized by the Himpunan Mahasiswa Sistem Informasi (HMSI) which consists of a series of events in the fields of technology and business. ISE! aims to introduce the ITS Information Systems Department to the wider community through various works and achievements.",
+        img: "/exp/ise.svg",
+        job: [
+            "Designing the ISE! 2024 website in collaboration with the creative team.",
+            "Creating visually appealing user interfaces that enhance the overall aesthetic and branding.",
+            "Developing seamless and intuitive user experiences to improve usability.",
+            "Collaborating closely with cross-functional teams to ensure design consistency and functionality.",
+        ]
+    },
+    {
         position: "Lead UI/UX Designer",
         company: "TEDxITS",
-        date: "Jan 2024 - Now",
+        date: "Jan 2024 - May 2025",
         link: "https://www.tedxits.org/",
         description : "TEDxITS 2024 is an event that provides a platform for the community, especially those within the ITS environment, to share their compelling ideas. The aim of this event is to disseminate ideas and concepts about new and previously unexplored topics. Our goal is to ignite discussions, foster connections, and build a sense of community.",
         img: "/exp/tedx.svg",
@@ -98,7 +125,7 @@ export const experiences = [
     {
         position: "Lead UI/UX Designer",
         company: "Futurest",
-        date: "Oct 2024 - Now",
+        date: "Oct 2024 - May 2025",
         link: "https://www.futurest.id/",
         description : "FUTUREST (Future Energy Summit) stands as Indonesia's grand stage for renewable energy, orchestrated by SRE ITS, igniting students passion across the nation to pioneer energy transformation through innovative exploration and strategic implementation.",
         img: "/exp/futurest.svg",
@@ -111,7 +138,7 @@ export const experiences = [
     {
         position: "UI/UX Designer",
         company: "SRE ITS",
-        date: "Jun 2024 - Now",
+        date: "Jun 2024 - Jun 2025",
         link: "https://www.sre-its.com/",
         description : "SRE ITS SC serves as an international-based renewable energy community that unites implementation, professional management competencies, contributes significantly to developing, and implementing sustainable renewable energy.",
         img: "/exp/sre.svg",
@@ -119,19 +146,6 @@ export const experiences = [
             "Contributed to the redesign of the SRE ITS website, enhancing UX with a more intuitive and engaging interface.",
             "Designed new features to improve the website's sustainability, ensuring alignment with user needs and goals.",
             "Worked closely with the team to create a cohesive and effective digital experience."
-        ]
-    },
-    {
-        position: "UI/UX Designer",
-        company: "Beta U",
-        date: "Jun 2024 - Feb 2025",
-        link: "https://www.linkedin.com/company/beta-u",
-        description : "BETA U is a dynamic Software House specializing in transforming ideas into Minimum Viable Products (MVPs) swiftly and creatively. With a keen understanding of project intricacies, BETA U collaborates closely with clients to bring their visions to life.",
-        img: "/exp/betaulogo.svg",
-        job: [
-            "Designing and implementing user-friendly interfaces for web and mobile applications.",
-            "Collaborating with cross-functional teams to gather requirements and translate them into intuitive designs.",
-            "Conducting user research and testing to ensure the designs meet user needs and preferences.",
         ]
     },
     {
@@ -146,20 +160,6 @@ export const experiences = [
             "Translated project requirements into effective design solutions, maintaining consistency with the overall theme.",
             "Collaborated closely with the team to align design elements with project objectives.",
             "Supported frontend developers to ensure accurate implementation and functionality.",
-        ]
-    },
-    {
-        position: "UI/UX Designer",
-        company: "ISE!",
-        date: "Jun 2024 - Oct 2024",
-        link: "https://www.ise-its.com/",
-        description : "Information Systems Expo (ISE!) is an annual event organized by the Himpunan Mahasiswa Sistem Informasi (HMSI) which consists of a series of events in the fields of technology and business. ISE! aims to introduce the ITS Information Systems Department to the wider community through various works and achievements.",
-        img: "/exp/ise.svg",
-        job: [
-            "Designing the ISE! 2024 website in collaboration with the creative team.",
-            "Creating visually appealing user interfaces that enhance the overall aesthetic and branding.",
-            "Developing seamless and intuitive user experiences to improve usability.",
-            "Collaborating closely with cross-functional teams to ensure design consistency and functionality.",
         ]
     },
 ]
@@ -265,7 +265,7 @@ export const expNow = [
         link: "https://linkedin.com/company/ajakgerak"
     },
     {
-        time: "Nov 24 - Now",
+        time: "Nov 24 - May 25",
         position: "Lead UI/UX Designer",
         company: "/exp/tedx.svg",
         link: "https://linkedin.com/company/tedxits"

@@ -115,7 +115,7 @@ export default function Home() {
       <Template>
         <h1
           className="text-md font-semibold">
-          Where I am right now?
+          Where am I currently?
         </h1>
         
         <div className="flex flex-col items-start justify-start">
