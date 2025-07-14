@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
-    "@nextui-org/button": "^2.2.9",
-    "@nextui-org/react": "^2.6.11",
-    "@nextui-org/system": "^2.4.6",
+    "@heroui-org/button": "^2.2.9",
+    "@heroui-org/react": "^2.6.11",
+    "@heroui-org/system": "^2.4.6",
     "@omnedia/ngx-marquee": "^2.1.0",
     "@omnedia/ngx-scrollbar": "^2.0.0",
     "@radix-ui/react-avatar": "^1.1.2",
