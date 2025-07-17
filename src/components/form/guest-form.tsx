@@ -21,7 +21,7 @@
 // ]
 
 // const GuestForm = ({ user } : {user: User | null}) => {
-//     return (    
+//     return (
 //         <div className='flex flex-col gap-4 h-fit pt-4 max-w-2xl w-full'>
 //             {user ? (
 //                 <div className='flex flex-col gap-3 items-end w-full'>
@@ -37,7 +37,7 @@
 //                 </div>
 //             ) : (
 //                 <div className='flex flex-row md:flex-row md:gap-6 gap-2 w-full'>
-//                     {login.map((provider) => (   
+//                     {login.map((provider) => (
 //                         <form key={provider.providers} action={provider.action} className='w-full'>
 //                             <Button type='submit' variant="secondary" className='w-full gap-3'>
 //                                 <Image

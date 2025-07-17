@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { easeIn, easeOut, motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
+import { easeIn, easeOut, motion } from 'framer-motion';
+import { ChevronRight } from 'lucide-react';
 
 interface SwipeButtonProps {
   className?: string;
@@ -9,21 +9,17 @@ interface SwipeButtonProps {
   duration?: number;
 }
 
-const SwipeButton = ({
-  className,
-  children = "Book a demo",
-  duration = 0.5,
-}: SwipeButtonProps) => {
+const SwipeButton = ({ className, children = 'Book a demo', duration = 0.5 }: SwipeButtonProps) => {
   const sliderVariants = {
     open: {
-      width: "158px",
+      width: '158px',
       transition: {
         duration,
         ease: [0.32, 0.72, 0, 1],
       },
     },
     closed: {
-      width: "40px",
+      width: '40px',
       transition: {
         duration,
         ease: [0.32, 0.72, 0, 1],

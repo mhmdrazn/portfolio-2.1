@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
-import { motion, MotionProps } from "motion/react";
-import { useEffect, useRef, useState } from "react";
+import { cn } from '@/lib/utils';
+import { motion, MotionProps } from 'motion/react';
+import { useEffect, useRef, useState } from 'react';
 
 interface AnimatedSpanProps extends MotionProps {
   children: React.ReactNode;
@@ -10,17 +10,12 @@ interface AnimatedSpanProps extends MotionProps {
   className?: string;
 }
 
-export const AnimatedSpan = ({
-  children,
-  delay = 0,
-  className,
-  ...props
-}: AnimatedSpanProps) => (
+export const AnimatedSpan = ({ children, delay = 0, className, ...props }: AnimatedSpanProps) => (
   <motion.div
     initial={{ opacity: 0, y: -5 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.3, delay: delay / 1000 }}
-    className={cn("grid text-xs md:text-sm font-normal tracking-tight", className)}
+    className={cn('grid text-xs md:text-sm font-normal tracking-tight', className)}
     {...props}
   >
     {children}
@@ -38,20 +33,20 @@ interface TypingAnimationProps extends MotionProps {
 export const TypingAnimation = ({
   children,
   className,
-  duration =85,
+  duration = 85,
   delay = 0,
-  as: Component = "span",
+  as: Component = 'span',
   ...props
 }: TypingAnimationProps) => {
-  if (typeof children !== "string") {
-    throw new Error("TypingAnimation: children must be a string. Received:");
+  if (typeof children !== 'string') {
+    throw new Error('TypingAnimation: children must be a string. Received:');
   }
 
   const MotionComponent = motion.create(Component, {
     forwardMotionProps: true,
   });
 
-  const [displayedText, setDisplayedText] = useState<string>("");
+  const [displayedText, setDisplayedText] = useState<string>('');
   const [started, setStarted] = useState(false);
   const elementRef = useRef<HTMLElement | null>(null);
 
@@ -83,7 +78,7 @@ export const TypingAnimation = ({
   return (
     <MotionComponent
       ref={elementRef}
-      className={cn("text-xs md:text-sm font-normal tracking-tight", className)}
+      className={cn('text-xs md:text-sm font-normal tracking-tight', className)}
       {...props}
     >
       {displayedText}
@@ -98,12 +93,7 @@ interface TerminalProps {
 
 export const Terminal = ({ children, className }: TerminalProps) => {
   return (
-    <div
-      className={cn(
-        "z-0 h-fit w-full max-w-xl rounded-xl border border-border",
-        className,
-      )}
-    >
+    <div className={cn('z-0 h-fit w-full max-w-xl rounded-xl border border-border', className)}>
       <div className="flex flex-col gap-y-2 border-b border-border p-4">
         <div className="flex flex-row gap-x-2">
           <div className="h-2 w-2 rounded-full bg-red-500"></div>

@@ -41,7 +41,6 @@ body {
   ::selection {
     background-color: #fff2ce;
   }
-  
 }
 
 @layer base {
@@ -118,7 +117,7 @@ body {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 button.c-accordion {
@@ -128,7 +127,7 @@ button.c-accordion {
   padding: 5px;
   width: 50%;
   border: none;
-  border: 1px solid #CBCBCB;
+  border: 1px solid #cbcbcb;
   text-align: left;
   outline: none;
   font-size: 15px;
@@ -138,4 +137,3 @@ button.c-accordion {
 .float-right {
   float: right;
 }
-
