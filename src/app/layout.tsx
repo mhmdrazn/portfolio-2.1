@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Figtree } from 'next/font/google';
+import { Manrope } from 'next/font/google';
 import { Toaster } from '@/components/ui/toaster';
 import { ReactLenis } from '@/lib/lenis';
 import { Analytics } from '@vercel/analytics/react';
@@ -10,7 +10,7 @@ import Head from 'next/head';
 import NextTopLoader from 'nextjs-toploader';
 import QueryProvider from '@/providers/query-provider';
 
-const figtree = Figtree({
+const manrope = Manrope({
     subsets: ['latin'],
     weight: ['300', '400', '500', '600', '700'],
 });
@@ -55,7 +55,7 @@ export default function RootLayout({
                 <Head>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 </Head>
-                <body className={figtree.className}>
+                <body className={manrope.className}>
                     <QueryProvider>
                         <NextTopLoader
                             color="#181C14"

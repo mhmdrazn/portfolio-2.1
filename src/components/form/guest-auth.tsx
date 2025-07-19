@@ -5,7 +5,7 @@ import Image from 'next/image';
 import AuthMutation from '@/mutation/auth.mutation';
 import { Button } from '../ui/button';
 import { User } from '@supabase/supabase-js';
-import { Textarea } from '@/components/ui/textarea';
+import ChatArea from '@/components/sections/chat-area';
 
 const GuestForm = ({ user }: { user: User | null }) => {
     const { githubMutation, googleMutation, signOutMutation } = AuthMutation();
@@ -38,13 +38,11 @@ const GuestForm = ({ user }: { user: User | null }) => {
     };
 
     return (
-        <div className="flex flex-col gap-4 h-fit pt-4 max-w-2xl w-full">
+        <div className="flex flex-col gap-4 h-fit max-w-2xl w-full">
             {user ? (
                 <div className="flex flex-col gap-3 items-end w-full">
-                    <Textarea placeholder="Your message" className="w-full h-fit" />
-                    <div className="flex w-full gap-2">
-                        <Button>Send</Button>
-                    </div>
+                    <ChatArea/>
+                    
                     <div
                         className="text-xs font-normal anim text-background/70 hover:text-background w-fit hover:text-background/ hover:cursor-pointer"
                         onClick={handleSignOut}
