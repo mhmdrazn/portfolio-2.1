@@ -3,7 +3,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Template from '@/components/ui/template';
 import GuestForm from '@/components/form/guest-auth';
-import Heading from '@/components/ui/heading';
+import { GuestbookList } from '@/components/sections/guestbook-list';
 
 export const metadata: Metadata = {
     title: 'Guest',
@@ -18,15 +18,16 @@ const Page = async () => {
             <Template>
                 <div className="flex flex-col gap-3 w-full">
                     <h1 className="text-2xl md:text-3xl font-normal w-full text-left">
-                        Lets <span className="anim lora-font">See...</span> who was{' '}
+                        Lets <span className="anim lora-font">See</span> who was{' '}
                         <span className="lora-font">Here</span>
                     </h1>
                 </div>
 
                 <div className='flex flex-col gap-3 w-full'>
-                    <Heading text="Do you want to say hi?" />
                     <GuestForm user={users.user} />
                 </div>
+
+                <GuestbookList/>
             </Template>
         </main>
     );

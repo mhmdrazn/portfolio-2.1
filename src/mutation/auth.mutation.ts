@@ -17,7 +17,7 @@ const AuthMutation = () => {
                 });
             } else {
                 toast({
-                    title: 'Success',
+                    title: 'Signing with GitHub',
                     description: response.data,
                     variant: 'default',
                 });
@@ -44,7 +44,7 @@ const AuthMutation = () => {
                 });
             } else {
                 toast({
-                    title: 'Success',
+                    title: 'Signing with Google',
                     description: response.data,
                     variant: 'default',
                 });

@@ -30,7 +30,7 @@ export async function addContent(formData: FormData) {
 
         const { error } = await supabase.from('guestbook').insert({
             content: content.trim(),
-            user_id: user.user.id,
+            user: user.user.id,
         });
 
         if (error) {

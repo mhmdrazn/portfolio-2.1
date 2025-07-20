@@ -19,7 +19,7 @@ const signInWithProvider = async (provider: 'github' | 'google'): Promise<AuthRe
         return { error: error.message };
     }
 
-    return { data: `Signed in with ${provider} successfully` };
+    return { data: `Wait for a moment...` };
 };
 
 export const signInWithGithub = () => signInWithProvider('github');

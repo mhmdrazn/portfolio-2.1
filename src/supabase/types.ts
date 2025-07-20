@@ -8,19 +8,19 @@ export type Database = {
                     content: string;
                     created_at: string;
                     id: number;
-                    user_id: string | null;
+                    user: string | null;
                 };
                 Insert: {
                     content: string;
                     created_at?: string;
                     id?: number;
-                    user_id?: string | null;
+                    user?: string | null;
                 };
                 Update: {
                     content?: string;
                     created_at?: string;
                     id?: number;
-                    user_id?: string | null;
+                    user?: string | null;
                 };
                 Relationships: [];
             };
