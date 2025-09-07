@@ -28,9 +28,9 @@ const tabs = [
     },
     {
         id: 4,
-        label: 'Retrospective',
+        label: 'Course',
         icon: <IconNotebook className="h-full w-full" />,
-        href: '/retrospective',
+        href: '/course/itsm',
     },
     {
         id: 5,

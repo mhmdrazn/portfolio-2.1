@@ -6,7 +6,7 @@ interface TemplateProps {
 
 const Template: React.FC<TemplateProps> = ({ children }) => {
     return (
-        <div className="md:max-w-lg max-w-md w-full h-fit flex flex-col items-start gap-6 mt-8">
+        <div className="md:max-w-lg max-w-md w-full h-fit flex flex-col items-start gap-6 mt-4">
             {children}
         </div>
     );
