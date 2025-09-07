@@ -33,12 +33,12 @@ function Page() {
         <main className="flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-12">
             <Template>
                 <div className="flex flex-row gap-4 items-center">
-                    <a href="/course">
+                    <a href="/">
                         <Button variant={'outline'} className="w-fit">
                             <IconArrowLeft />
                         </Button>
                     </a>
-                    Back to Course
+                    Back to Home
                 </div>
 
                 <h1 className="font-semibold text-2xl">ITSM - IT Service Management</h1>
