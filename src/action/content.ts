@@ -18,14 +18,14 @@ export async function addContent(formData: FormData) {
         const supabase = createClient();
         const { data: user, error: userError } = await supabase.auth.getUser();
 
-        if (userError || !user.user){
+        if (userError || !user.user) {
             return { error: 'User not authenticated.' };
         }
-        
+
         await supabase.from('profile').upsert({
             id: user.user.id,
             name: user.user.user_metadata?.full_name || '',
-            avatar_url: user.user.user_metadata?.avatar_url || ''
+            avatar_url: user.user.user_metadata?.avatar_url || '',
         });
 
         const { error } = await supabase.from('guestbook').insert({
@@ -40,7 +40,6 @@ export async function addContent(formData: FormData) {
 
         revalidatePath('/guest');
         return { data: 'Content added successfully.' };
-        
     } catch (error) {
         console.error('Error adding content:', error);
         return { error: 'An unexpected error occurred.' };

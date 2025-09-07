@@ -38,7 +38,7 @@ const AvatarStatus = () => {
             className="group/status relative h-fit w-fit cursor-default rounded-3xl border border-background/10"
         >
             <Avatar className="w-16 h-16">
-                <AvatarImage src="https://github.com/mhmdrazn.png" alt="Razan's avatar" />
+                <AvatarImage src="/ava.jpg" alt="Razan's avatar" />
             </Avatar>
             <motion.div
                 variants={badgeMotion}

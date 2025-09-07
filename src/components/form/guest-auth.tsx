@@ -41,8 +41,8 @@ const GuestForm = ({ user }: { user: User | null }) => {
         <div className="flex flex-col gap-4 h-fit max-w-2xl w-full">
             {user ? (
                 <div className="flex flex-col gap-3 items-end w-full">
-                    <ChatArea/>
-                    
+                    <ChatArea />
+
                     <div
                         className="text-xs font-normal anim text-background/70 hover:text-background w-fit hover:text-background/ hover:cursor-pointer"
                         onClick={handleSignOut}

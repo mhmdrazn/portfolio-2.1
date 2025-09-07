@@ -16,7 +16,7 @@ const ChatArea = () => {
 
         setLoading(true);
 
-        if (!content.trim()){
+        if (!content.trim()) {
             return;
         }
 
@@ -26,36 +26,28 @@ const ChatArea = () => {
             setContent('');
             setLoading(false);
         }
-
     };
 
     return (
         <div className="md:max-w-lg max-w-md w-full h-fit flex flex-col items-start gap-2">
             <TextMorph className="text-lg font-semibold text-background/70">{text}</TextMorph>
             <div className="flex flex-col gap-2 w-full">
-                <form 
-                    className='w-full flex flex-col gap-2'
-                    onSubmit={handleSubmit}>
+                <form className="w-full flex flex-col gap-2" onSubmit={handleSubmit}>
                     <Textarea
-                         id="guestbook-message"
+                        id="guestbook-message"
                         onChange={(e) => {
                             setContent(e.target.value);
-                            setText(e.target.value)
+                            setText(e.target.value);
                         }}
-                        placeholder='Type your message here...'
+                        placeholder="Type your message here..."
                     />
-                    <Button
-                        disabled={loading}
-                        type="submit"
-                        className="w-full anim"
-                    >
+                    <Button disabled={loading} type="submit" className="w-full anim">
                         {loading ? 'Sending...' : 'Send'}
                     </Button>
-
                 </form>
             </div>
         </div>
     );
-}
+};
 
 export default ChatArea;

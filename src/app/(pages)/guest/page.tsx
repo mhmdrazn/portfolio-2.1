@@ -23,11 +23,11 @@ const Page = async () => {
                     </h1>
                 </div>
 
-                <div className='flex flex-col gap-3 w-full'>
+                <div className="flex flex-col gap-3 w-full">
                     <GuestForm user={users.user} />
                 </div>
 
-                <GuestbookList/>
+                <GuestbookList />
             </Template>
         </main>
     );
