@@ -50,7 +50,7 @@ function Recap() {
                             <a
                                 href="/itsm/5026231174_Week3.pdf"
                                 target="_blank"
-                                rel="noopener noreferrer"   
+                                rel="noopener noreferrer"
                             >
                                 📄 Week 3 Class Assignment (PDF)
                             </a>
@@ -79,19 +79,25 @@ function Recap() {
 
                             <ul className="list-disc pl-6 text-sm">
                                 <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                    <strong>Guiding Principles</strong> universal recommendations like Focus on Value, Start Where You Are, and Optimize and Automate.
+                                    <strong>Guiding Principles</strong> universal recommendations
+                                    like Focus on Value, Start Where You Are, and Optimize and
+                                    Automate.
                                 </li>
                                 <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                    <strong>Governance</strong> ensuring alignment with strategic direction.
+                                    <strong>Governance</strong> ensuring alignment with strategic
+                                    direction.
                                 </li>
                                 <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                    <strong>Service Value Chain</strong> the operating model that transforms demand into value through six key activities.
+                                    <strong>Service Value Chain</strong> the operating model that
+                                    transforms demand into value through six key activities.
                                 </li>
                                 <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                    <strong>Continual Improvement</strong> ensuring services evolve and remain relevant.
+                                    <strong>Continual Improvement</strong> ensuring services evolve
+                                    and remain relevant.
                                 </li>
                                 <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                    <strong>Management Practices</strong> sets of organizational resources designed to perform work or achieve objectives.
+                                    <strong>Management Practices</strong> sets of organizational
+                                    resources designed to perform work or achieve objectives.
                                 </li>
                             </ul>
 
@@ -105,7 +111,9 @@ function Recap() {
 
                     <Template>
                         <Section>
-                            <h1 className="font-semibold">Linked Dimensions & Guiding Principles</h1>
+                            <h1 className="font-semibold">
+                                Linked Dimensions & Guiding Principles
+                            </h1>
                             <Paragraph
                                 text={
                                     'We then worked on scenarios that combined the Four Dimensions of Service Management with Guiding Principles from ITIL. This showed how both frameworks are interconnected and complement each other in solving practical ITSM challenges:'
@@ -114,32 +122,71 @@ function Recap() {
 
                             <Section>
                                 <h3 className="font-semibold text-sm mt-3">Scenario 1</h3>
-                                <p className="font-light text-sm mb-2">A chatbot is introduced to answer student FAQs (e.g., admissions, scholarships). Students 
-    complain it gives irrelevant answers, while staff say the data is outdated.</p>                  
+                                <p className="font-light text-sm mb-2">
+                                    A chatbot is introduced to answer student FAQs (e.g.,
+                                    admissions, scholarships). Students complain it gives irrelevant
+                                    answers, while staff say the data is outdated.
+                                </p>
 
                                 <div className="overflow-x-auto">
                                     <table className="min-w-full text-xs">
                                         <tbody>
                                             <tr className="bg-gray-50">
-                                                <td className="px-4 py-2 font-semibold">Dimension causing the issue. Why?</td>
-                                                <td className="px-4 py-2">Information &amp; Technology. The chatbot uses outdated source data that is not regularly updated, so the answers provided are not relevant to the questions asked.</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Dimension causing the issue. Why?
+                                                </td>
+                                                <td className="px-4 py-2">
+                                                    Information &amp; Technology. The chatbot uses
+                                                    outdated source data that is not regularly
+                                                    updated, so the answers provided are not
+                                                    relevant to the questions asked.
+                                                </td>
                                             </tr>
                                             <tr className="bg-gray-50">
-                                                <td className="px-4 py-2 font-semibold">Principle and What is it?</td>
-                                                <td className="px-4 py-2">Collaborate and Promote Visibility. We don’t need to solve all problems at once; we can make small improvements gradually by utilizing feedback from students and staff.</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Principle and What is it?
+                                                </td>
+                                                <td className="px-4 py-2">
+                                                    Collaborate and Promote Visibility. We don’t
+                                                    need to solve all problems at once; we can make
+                                                    small improvements gradually by utilizing
+                                                    feedback from students and staff.
+                                                </td>
                                             </tr>
                                             <tr className="bg-gray-50">
-                                                <td className="px-4 py-2 font-semibold">Link and how is it?</td>
-                                                <td className="px-4 py-2">With iterative improvements, the chatbot can be tested and updated in cycles. Student feedback makes answers more accurate, while staff can continuously update the data source to keep it relevant.</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Link and how is it?
+                                                </td>
+                                                <td className="px-4 py-2">
+                                                    With iterative improvements, the chatbot can be
+                                                    tested and updated in cycles. Student feedback
+                                                    makes answers more accurate, while staff can
+                                                    continuously update the data source to keep it
+                                                    relevant.
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td className="px-4 py-2 font-semibold">Reflection</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Reflection
+                                                </td>
                                                 <td className="px-4 py-2">
                                                     <div>
-                                                        <span className="font-semibold">Other dimensions:</span> Organizations &amp; People (staff responsible for data maintenance), Value Streams &amp; Processes (updating the workflow for the chatbot).
+                                                        <span className="font-semibold">
+                                                            Other dimensions:
+                                                        </span>{' '}
+                                                        Organizations &amp; People (staff
+                                                        responsible for data maintenance), Value
+                                                        Streams &amp; Processes (updating the
+                                                        workflow for the chatbot).
                                                     </div>
                                                     <div>
-                                                        <span className="font-semibold">Other principles:</span> Collaborate and Promote Visibility (communication between IT and academic staff) and Focus on Value (prioritize student experience).
+                                                        <span className="font-semibold">
+                                                            Other principles:
+                                                        </span>{' '}
+                                                        Collaborate and Promote Visibility
+                                                        (communication between IT and academic
+                                                        staff) and Focus on Value (prioritize
+                                                        student experience).
                                                     </div>
                                                 </td>
                                             </tr>
@@ -150,32 +197,71 @@ function Recap() {
 
                             <Section>
                                 <h3 className="font-semibold text-sm mt-3">Scenario 2</h3>
-                                <p className="font-light text-sm mb-2">The university upgrades Wi-Fi. Vendors delay delivery of equipment, leaving dormitories without 
-coverage. Clearly, there’s a service gap because of vendor’s risk that is not mitigated. </p>                  
+                                <p className="font-light text-sm mb-2">
+                                    The university upgrades Wi-Fi. Vendors delay delivery of
+                                    equipment, leaving dormitories without coverage. Clearly,
+                                    there’s a service gap because of vendor’s risk that is not
+                                    mitigated.{' '}
+                                </p>
 
                                 <div className="overflow-x-auto">
                                     <table className="min-w-full text-xs">
                                         <tbody>
                                             <tr className="bg-gray-50">
-                                                <td className="px-4 py-2 font-semibold">Dimension causing the issue. Why?</td>
-                                                <td className="px-4 py-2">Partners &amp; Suppliers. The delay is caused by dependence on vendors and supplier risks that are not well managed, resulting in a service gap.</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Dimension causing the issue. Why?
+                                                </td>
+                                                <td className="px-4 py-2">
+                                                    Partners &amp; Suppliers. The delay is caused by
+                                                    dependence on vendors and supplier risks that
+                                                    are not well managed, resulting in a service
+                                                    gap.
+                                                </td>
                                             </tr>
                                             <tr className="bg-gray-50">
-                                                <td className="px-4 py-2 font-semibold">Principle and What is it?</td>
-                                                <td className="px-4 py-2">Collaborate and Promote Visibility. Work across organizational boundaries with open communication, ensuring risks, progress, and obstacles are visible to all stakeholders.</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Principle and What is it?
+                                                </td>
+                                                <td className="px-4 py-2">
+                                                    Collaborate and Promote Visibility. Work across
+                                                    organizational boundaries with open
+                                                    communication, ensuring risks, progress, and
+                                                    obstacles are visible to all stakeholders.
+                                                </td>
                                             </tr>
                                             <tr className="bg-gray-50">
-                                                <td className="px-4 py-2 font-semibold">Link and how is it?</td>
-                                                <td className="px-4 py-2">By increasing visibility, the university and vendor can share risk mitigation plans, monitor equipment delivery schedules, and adjust actions quickly. This collaboration ensures accountability and minimizes delays.</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Link and how is it?
+                                                </td>
+                                                <td className="px-4 py-2">
+                                                    By increasing visibility, the university and
+                                                    vendor can share risk mitigation plans, monitor
+                                                    equipment delivery schedules, and adjust actions
+                                                    quickly. This collaboration ensures
+                                                    accountability and minimizes delays.
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td className="px-4 py-2 font-semibold">Reflection</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Reflection
+                                                </td>
                                                 <td className="px-4 py-2">
                                                     <div>
-                                                        <span className="font-semibold">Other dimensions:</span> Value Streams &amp; Processes (logistics and deployment planning), Organizations &amp; People (IT staff coordinating with vendors).
+                                                        <span className="font-semibold">
+                                                            Other dimensions:
+                                                        </span>{' '}
+                                                        Value Streams &amp; Processes (logistics and
+                                                        deployment planning), Organizations &amp;
+                                                        People (IT staff coordinating with vendors).
                                                     </div>
                                                     <div>
-                                                        <span className="font-semibold">Other principles:</span> Optimize and Automate (improving tracking and monitoring), Focus on Value (ensuring dorm Wi-Fi is available as a key student service).
+                                                        <span className="font-semibold">
+                                                            Other principles:
+                                                        </span>{' '}
+                                                        Optimize and Automate (improving tracking
+                                                        and monitoring), Focus on Value (ensuring
+                                                        dorm Wi-Fi is available as a key student
+                                                        service).
                                                     </div>
                                                 </td>
                                             </tr>
@@ -194,11 +280,21 @@ coverage. Clearly, there’s a service gap because of vendor’s risk that is no
 
                     <Template>
                         <Section>
-                            <h1 className="font-semibold">The Service Value Chain (SVC) in Action</h1>
-                            <Paragraph text={'We practiced applying the six activities of the Service Value Chain to a real ITS case: the migration of the email system from @my.its.ac.id to @its.ac.id'}/>
+                            <h1 className="font-semibold">
+                                The Service Value Chain (SVC) in Action
+                            </h1>
+                            <Paragraph
+                                text={
+                                    'We practiced applying the six activities of the Service Value Chain to a real ITS case: the migration of the email system from @my.its.ac.id to @its.ac.id'
+                                }
+                            />
                             <Section>
                                 <h3 className="font-semibold text-sm mt-3">Case Scenario</h3>
-                                <p className="font-light text-sm mb">ITS is going to migrate its email system from @my.its.edu to @its.edu. Using the service value chain, explain how does the activities go from demand to value.</p>
+                                <p className="font-light text-sm mb">
+                                    ITS is going to migrate its email system from @my.its.edu to
+                                    @its.edu. Using the service value chain, explain how does the
+                                    activities go from demand to value.
+                                </p>
 
                                 <div className="overflow-x-auto my-6">
                                     <table className="min-w-full text-xs">
@@ -212,37 +308,72 @@ coverage. Clearly, there’s a service gap because of vendor’s risk that is no
                                             <tr>
                                                 <td className="px-4 py-2 font-semibold">Plan</td>
                                                 <td className="px-4 py-2">
-                                                    ITS sets the migration strategy from @my.its.ac.id to @its.ac.id to unify digital identity, enhance access security, and ease integration with Microsoft 365 services. This stage also includes scheduling, budgeting, and risk mitigation planning.
+                                                    ITS sets the migration strategy from
+                                                    @my.its.ac.id to @its.ac.id to unify digital
+                                                    identity, enhance access security, and ease
+                                                    integration with Microsoft 365 services. This
+                                                    stage also includes scheduling, budgeting, and
+                                                    risk mitigation planning.
                                                 </td>
                                             </tr>
                                             <tr className="bg-gray-50">
                                                 <td className="px-4 py-2 font-semibold">Engage</td>
                                                 <td className="px-4 py-2">
-                                                    ITS actively communicates with stakeholders (students, lecturers, staff, vendors) to ensure needs are understood. Migration information is shared via official announcements, socialization, and other channels so everyone is prepared for the change.
+                                                    ITS actively communicates with stakeholders
+                                                    (students, lecturers, staff, vendors) to ensure
+                                                    needs are understood. Migration information is
+                                                    shared via official announcements,
+                                                    socialization, and other channels so everyone is
+                                                    prepared for the change.
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td className="px-4 py-2 font-semibold">Design &amp; Transition</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Design &amp; Transition
+                                                </td>
                                                 <td className="px-4 py-2">
-                                                    The IT team designs secure data transfer mechanisms (email, calendar, contacts, OneDrive) to the new domain. Settings like auto-forwarding and auto-reply are prepared to keep communication smooth. Migration is tested in stages to avoid disrupting campus activities.
+                                                    The IT team designs secure data transfer
+                                                    mechanisms (email, calendar, contacts, OneDrive)
+                                                    to the new domain. Settings like auto-forwarding
+                                                    and auto-reply are prepared to keep
+                                                    communication smooth. Migration is tested in
+                                                    stages to avoid disrupting campus activities.
                                                 </td>
                                             </tr>
                                             <tr className="bg-gray-50">
-                                                <td className="px-4 py-2 font-semibold">Obtain/Build</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Obtain/Build
+                                                </td>
                                                 <td className="px-4 py-2">
-                                                    ITS prepares the technical infrastructure for the new @its.ac.id email based on Microsoft 365. Servers, new accounts, and integration with supporting apps (Zoom, Teams, Office 365, etc.) are set up and tested before full implementation.
+                                                    ITS prepares the technical infrastructure for
+                                                    the new @its.ac.id email based on Microsoft 365.
+                                                    Servers, new accounts, and integration with
+                                                    supporting apps (Zoom, Teams, Office 365, etc.)
+                                                    are set up and tested before full
+                                                    implementation.
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td className="px-4 py-2 font-semibold">Deliver &amp; Support</td>
+                                                <td className="px-4 py-2 font-semibold">
+                                                    Deliver &amp; Support
+                                                </td>
                                                 <td className="px-4 py-2">
-                                                    The migration is carried out with technical guides for students and staff, including manuals on logging in, syncing apps, and updating accounts on various platforms. The ITS helpdesk is on standby to assist users facing issues.
+                                                    The migration is carried out with technical
+                                                    guides for students and staff, including manuals
+                                                    on logging in, syncing apps, and updating
+                                                    accounts on various platforms. The ITS helpdesk
+                                                    is on standby to assist users facing issues.
                                                 </td>
                                             </tr>
                                             <tr className="bg-gray-50">
                                                 <td className="px-4 py-2 font-semibold">Improve</td>
                                                 <td className="px-4 py-2">
-                                                    After migration, ITS collects user feedback on their experience. This input is used to improve documentation, enhance service capacity, and optimize the system. The evaluation also opens opportunities for further development to better support academic activities.
+                                                    After migration, ITS collects user feedback on
+                                                    their experience. This input is used to improve
+                                                    documentation, enhance service capacity, and
+                                                    optimize the system. The evaluation also opens
+                                                    opportunities for further development to better
+                                                    support academic activities.
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -261,78 +392,137 @@ coverage. Clearly, there’s a service gap because of vendor’s risk that is no
                     <Template>
                         <Section>
                             <h1 className="font-semibold">Visualizing the Service Value System</h1>
-                            <Paragraph text={'To better understand how the SVS operates as a whole, I created a mind-map that placed all its components into a single picture. The map showed the Service Value Chain at the center, surrounded by guiding principles, governance, continual improvement, and practices.'}/>
-                            
+                            <Paragraph
+                                text={
+                                    'To better understand how the SVS operates as a whole, I created a mind-map that placed all its components into a single picture. The map showed the Service Value Chain at the center, surrounded by guiding principles, governance, continual improvement, and practices.'
+                                }
+                            />
+
                             <Image
                                 src="/itsm/week3-mindmap.png"
-                                alt='mindmap'
+                                alt="mindmap"
                                 height={4886}
                                 width={2940}
-                                >
-                            </Image>
+                            ></Image>
                         </Section>
                     </Template>
 
                     <Template>
                         <Section>
                             <h1 className="font-semibold">ITIL Terms in Context</h1>
-                            <Paragraph text={'The week closed with a glossary of ITIL-related terms I had learned so far. Writing these definitions in my own words made the framework clearer'}/>
-                            
+                            <Paragraph
+                                text={
+                                    'The week closed with a glossary of ITIL-related terms I had learned so far. Writing these definitions in my own words made the framework clearer'
+                                }
+                            />
+
                             <div className="overflow-x-auto my-6">
                                 <table className="min-w-full text-xs">
                                     <tbody>
                                         <tr>
-                                            <td className="px-4 py-2">ITIL (Information Technology Infrastructure Library)</td>
-                                            <td className="px-4 py-2">A best practice framework for managing IT services with the goal of creating value.</td>
+                                            <td className="px-4 py-2">
+                                                ITIL (Information Technology Infrastructure Library)
+                                            </td>
+                                            <td className="px-4 py-2">
+                                                A best practice framework for managing IT services
+                                                with the goal of creating value.
+                                            </td>
                                         </tr>
                                         <tr className="bg-gray-50">
-                                            <td className="px-4 py-2">Service Value System (SVS)</td>
-                                            <td className="px-4 py-2">The overarching model that shows how all organizational components work together to create value.</td>
+                                            <td className="px-4 py-2">
+                                                Service Value System (SVS)
+                                            </td>
+                                            <td className="px-4 py-2">
+                                                The overarching model that shows how all
+                                                organizational components work together to create
+                                                value.
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td className="px-4 py-2">Service Value Chain (SVC)</td>
-                                            <td className="px-4 py-2">The operating model with six core activities (Plan, Engage, Design &amp; Transition, Obtain/Build, Deliver &amp; Support, Improve).</td>
+                                            <td className="px-4 py-2">
+                                                The operating model with six core activities (Plan,
+                                                Engage, Design &amp; Transition, Obtain/Build,
+                                                Deliver &amp; Support, Improve).
+                                            </td>
                                         </tr>
                                         <tr className="bg-gray-50">
-                                            <td className="px-4 py-2">Four Dimensions of Service Management</td>
-                                            <td className="px-4 py-2">Perspectives that must be considered in all services: People, Technology, Partners, and Processes.</td>
+                                            <td className="px-4 py-2">
+                                                Four Dimensions of Service Management
+                                            </td>
+                                            <td className="px-4 py-2">
+                                                Perspectives that must be considered in all
+                                                services: People, Technology, Partners, and
+                                                Processes.
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td className="px-4 py-2">Guiding Principles</td>
-                                            <td className="px-4 py-2">Universal recommendations such as Focus on Value or Collaborate and Promote Visibility that help guide decisions.</td>
+                                            <td className="px-4 py-2">
+                                                Universal recommendations such as Focus on Value or
+                                                Collaborate and Promote Visibility that help guide
+                                                decisions.
+                                            </td>
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-4 py-2">Continual Improvement</td>
-                                            <td className="px-4 py-2">Ongoing activity to ensure services remain relevant and effective.</td>
+                                            <td className="px-4 py-2">
+                                                Ongoing activity to ensure services remain relevant
+                                                and effective.
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td className="px-4 py-2">Demand</td>
-                                            <td className="px-4 py-2">The request or need from users that triggers activities.</td>
+                                            <td className="px-4 py-2">
+                                                The request or need from users that triggers
+                                                activities.
+                                            </td>
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-4 py-2">Opportunity</td>
-                                            <td className="px-4 py-2">A chance to improve or introduce services that generate value.</td>
+                                            <td className="px-4 py-2">
+                                                A chance to improve or introduce services that
+                                                generate value.
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td className="px-4 py-2">Value</td>
-                                            <td className="px-4 py-2">The outcome experienced by stakeholders, shaped by both utility (fit for purpose) and warranty (fit for use).</td>
+                                            <td className="px-4 py-2">
+                                                The outcome experienced by stakeholders, shaped by
+                                                both utility (fit for purpose) and warranty (fit for
+                                                use).
+                                            </td>
                                         </tr>
                                         <tr className="bg-gray-50">
-                                            <td className="px-4 py-2">Service Management Practices</td>
-                                            <td className="px-4 py-2">Practices that manage services end-to-end, such as Incident Management or Change Enablement.</td>
+                                            <td className="px-4 py-2">
+                                                Service Management Practices
+                                            </td>
+                                            <td className="px-4 py-2">
+                                                Practices that manage services end-to-end, such as
+                                                Incident Management or Change Enablement.
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td className="px-4 py-2">General Management Practices</td>
-                                            <td className="px-4 py-2">Practices that apply across the organization, such as Risk Management or Continual Improvement.</td>
+                                            <td className="px-4 py-2">
+                                                General Management Practices
+                                            </td>
+                                            <td className="px-4 py-2">
+                                                Practices that apply across the organization, such
+                                                as Risk Management or Continual Improvement.
+                                            </td>
                                         </tr>
                                         <tr className="bg-gray-50">
-                                            <td className="px-4 py-2">Technical Management Practices</td>
-                                            <td className="px-4 py-2">Practices focused on technology and infrastructure, such as Deployment or Software Development.</td>
+                                            <td className="px-4 py-2">
+                                                Technical Management Practices
+                                            </td>
+                                            <td className="px-4 py-2">
+                                                Practices focused on technology and infrastructure,
+                                                such as Deployment or Software Development.
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-
                         </Section>
                     </Template>
 
