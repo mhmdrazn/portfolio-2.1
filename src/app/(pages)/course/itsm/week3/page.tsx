@@ -17,8 +17,8 @@ function Recap() {
             <div className="w-full h-96 overflow-hidden">
                 <Image
                     className="object-cover w-full h-full"
-                    src="/itsm/week2-itsm.jpg"
-                    alt="week1-banner"
+                    src="/itsm/week3-itsm.jpg"
+                    alt="week3-banner"
                     width={1920}
                     height={384}
                 />

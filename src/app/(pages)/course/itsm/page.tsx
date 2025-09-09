@@ -26,6 +26,13 @@ const blog = [
         href: '/course/itsm/week2',
         image: '/itsm/week2-itsm.jpg',
     },
+    {
+        title: 'Week 3 – Service Value System and ITIL Management Practices',
+        description:
+            'In Week 3, we moved deeper into the Service Value System (SVS), one of the central models in ITIL 4.',
+        href: '/course/itsm/week3',
+        image: '/itsm/week3-itsm.jpg',
+    },
 ];
 
 function Page() {
