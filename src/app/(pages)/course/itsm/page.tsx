@@ -35,6 +35,21 @@ const blog = [
     },
 ];
 
+const docs = [
+    {
+        href: '/itsm/5026231174_Week1.pdf',
+        title: '📄 Week 1 Homework (PDF)'
+    },
+    {
+        href: '/itsm/5026231174_Week2.pdf',
+        title: '📄 Week 2 Class Assignment (PDF)'
+    }, 
+    {
+        href: '/itsm/5026231174_Week3.pdf',
+        title: '📄 Week 3 Class Assignment (PDF)'
+    }, 
+]
+
 function Page() {
     return (
         <main className="flex flex-col min-h-screen w-full justify-start p-6 pt-8 md:p-12 lg:p-20 items-center gap-12">
@@ -101,25 +116,17 @@ function Page() {
                         Work Documents
                     </div>
                     <div className="flex flex-col w-full gap-2">
-                        <Button variant={'outline'} className="w-full">
-                            <a
-                                href="/itsm/5026231174_Week1.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                📄 Week 1 Homework (PDF)
-                            </a>
-                        </Button>
-
-                        <Button variant={'outline'} className="w-full">
-                            <a
-                                href="/itsm/5026231174_Week2.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                📄 Week 2 Class Assignment (PDF)
-                            </a>
-                        </Button>
+                        {docs.map((index, key) => (
+                            <Button variant={'outline'} className="w-full" key={key}>
+                                <a
+                                    href={index.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {index.title}
+                                </a>
+                            </Button>
+                        ))}
                     </div>
                 </Template>
             </Template>
