@@ -36,14 +36,14 @@ const blog = [
     {
         title: 'Week 4 – Service Desk and Incident Management',
         description:
-            'In Week 3, we moved deeper into the Service Value System (SVS), one of the central models in ITIL 4.',
+            'Explored the Service Desk as the single point of contact in ITSM, highlighting its processes, types, KPIs, and its vital role in communication and trust.',
         href: '/course/itsm/week4',
         image: '/itsm/week4-itsm.jpg',
     },
     {
         title: 'Week 5 – Service Value System and ITIL Management Practices',
         description:
-            'In Week 3, we moved deeper into the Service Value System (SVS), one of the central models in ITIL 4.',
+            'Focused on Problem Management, emphasizing root cause analysis, workarounds, the KEDB, and the balance between reactive and proactive practices.',
         href: '/course/itsm/week5',
         image: '/itsm/week5-itsm.jpg',
     },
@@ -52,19 +52,35 @@ const blog = [
 const docs = [
     {
         href: '/itsm/5026231174_Week1.pdf',
-        title: '📄 Week 1 Homework (PDF)',
+        title: '📄 Week 1 Homework',
     },
     {
         href: '/itsm/5026231174_Week2.pdf',
-        title: '📄 Week 2 Class Assignment (PDF)',
+        title: '📄 Week 2 Class Assignment',
     },
     {
         href: '/itsm/5026231174_Week3.pdf',
-        title: '📄 Week 3 Class Assignment (PDF)',
+        title: '📄 Week 3 Class Assignment',
     },
     {
         href: '/itsm/5026231174_Week4.pdf',
-        title: '📄 Week 4 Class Assignment (PDF)',
+        title: '📄 Week 4 Class Assignment',
+    },
+    {
+        href: '/itsm/Week4_Lab1.xlsx',
+        title: '📄 Week 4 Lab 01 (Group)',
+    },
+    {
+        href: '/itsm/5026231174_Week5.pdf',
+        title: '📄 Week 5 Class Assignment',
+    },
+    {
+        href: '/itsm/Week5_Lab.xlsx',
+        title: '📄 Week 5 Lab 02 (Group)',
+    },
+    {
+        href: '/itsm/Week5_Report.pdf',
+        title: '📄 Week 5 Lab Report (Group)',
     },
 ];
 

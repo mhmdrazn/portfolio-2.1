@@ -17,8 +17,8 @@ function Recap() {
             <div className="w-full h-96 overflow-hidden">
                 <Image
                     className="object-cover w-full h-full"
-                    src="/itsm/week4-itsm.jpg"
-                    alt="week4-banner"
+                    src="/itsm/week5-itsm.jpg"
+                    alt="week5-banner"
                     width={1920}
                     height={384}
                 />
@@ -35,41 +35,51 @@ function Recap() {
                     </div>
                     <Template>
                         <div className="flex flex-col gap-3">
-                            <h1 className="font-semibold text-3xl">
-                                Week 4 – Service Desk and Incident Management
-                            </h1>
-                            <p className="font-light text-sm">September 16, 2025</p>
+                            <h1 className="font-semibold text-3xl">Week 5 – Problem Management</h1>
+                            <p className="font-light text-sm">September 23, 2025</p>
                         </div>
                         <Paragraph
                             text={
-                                'This week, my learning shifted from big frameworks like the Service Value System into the day-to-day frontline of IT Service Management: the Service Desk. If the SVS is the compass of ITSM, then the Service Desk is the voice and ears of the organization. It is the single point of contact where users meet IT, whether they are reporting an incident, making a service request, or simply asking for help. '
+                                'After spending the last week exploring the Service Desk, this week my focus shifted to Problem Management. If Incident Management is about putting out fires quickly, Problem Management is about asking why the fire started in the first place and making sure it never happens again.'
                             }
                         />
 
                         <Paragraph
                             text={
-                                'I learned that the Service Desk is more than a troubleshooting hub. According to ITIL 4, its role extends to ensuring user experience, maintaining communication, and supporting continual improvement. In short, it is not just about fixing things but about building trust.'
+                                'By the end of the week, I could clearly see how Problem Management differs from Incident Management. Incidents are about restoring service immediately, while Problems are about digging into the root cause, preventing repetition, and reducing long-term risk. ITIL 4 taught me that Problem Management is structured around three big activities: Problem Identification, Problem Control, and Error Control.'
                             }
                         />
 
-                        <div className="flex flex-row gap-3 w-full">
-                            <Button variant={'outline'} className="mt-2 w-full">
-                                <a
-                                    href="/itsm/5026231174_Week4.pdf"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    📄 Week 4 Class Assignment
-                                </a>
-                            </Button>
+                        <div className="flex flex-col gap-1 w-full">
+                            <div className="flex flex-row gap-3 w-full">
+                                <Button variant={'outline'} className="mt-2 w-full">
+                                    <a
+                                        href="/itsm/5026231174_Week5.pdf"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        📄 Week 5 Class Assignment
+                                    </a>
+                                </Button>
+
+                                <Button variant={'outline'} className="w-full mt-2">
+                                    <a
+                                        href="/itsm/Week5_Lab.xlsx"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        📄 Week 5 Lab 02 (Group)
+                                    </a>
+                                </Button>
+                            </div>
 
                             <Button variant={'outline'} className="w-full mt-2">
                                 <a
-                                    href="/itsm/5026231174_Week4_Group.pdf"
+                                    href="/itsm/Week5_Report.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    📄 Week 4 Group Assignment
+                                    📄 Week 5 Lab Report (Group)
                                 </a>
                             </Button>
                         </div>
@@ -79,29 +89,47 @@ function Recap() {
 
                     <Template>
                         <Section>
-                            <h1 className="font-semibold">
-                                Understanding the Role of the Service Desk
-                            </h1>
+                            <h1 className="font-semibold">Understanding Problem Management</h1>
                             <Paragraph
                                 text={
-                                    'The Service Desk is often described as the “single point of contact,” but in reality it is more than just a contact channel. It is a function that embodies the first impression users have of IT. In my assignment, I emphasized that the Service Desk manages the flow of communication, ensures users feel heard, and translates technical complexity into human language.'
+                                    'The first task asked me to define Problem Management in my own words. I described it as a structured practice focused on identifying, analyzing, and eliminating the root causes of incidents.'
                                 }
                             />
 
                             <Paragraph
                                 text={
-                                    'For instance, if a student cannot access their online exam because the portal is down, the Service Desk is the first to respond. Even if the technical fix requires another team, the Service Desk ensures the student receives updates, reassurance, and guidance. Without this, IT can feel like a black box.'
+                                    'As I wrote, I realized its value lies in being proactive. Users often only care if the service comes back. But behind the scenes, IT must care about preventing the same disruption tomorrow. That’s where Problem Management begins.'
                                 }
                             />
+
+                            <p className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
+                                At first, I thought this was just another layer of Incident
+                                Management. But as I reflected, I saw the contrast:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <p className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
+                                        Problems are about <strong>prevention</strong>, understand
+                                        and eliminate the cause.{' '}
+                                    </p>
+                                </li>
+                                <li>
+                                    <p className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
+                                        Incidents are about <strong>speed</strong>, restore the
+                                        service quickly.
+                                    </p>
+                                </li>
+                            </ul>
                         </Section>
                     </Template>
 
                     <Template>
                         <Section>
-                            <h1 className="font-semibold">Service Desk vs. Help Desk</h1>
+                            <h1 className="font-semibold">The Lifecycle of a Problem</h1>
                             <Paragraph
                                 text={
-                                    'This comparison was eye-opening. A Help Desk is traditionally reactive, solving issues when they come up, but rarely going further. A Service Desk, however, integrates with ITIL principles and business goals. It provides not only solutions but also communication, coordination, and insights.'
+                                    'When I reached this part of the assignment, I realized Problem Management is not just one big activity, it is a set of sub-processes, each with its own role in preventing recurring incidents. Writing them out made me feel like I was mapping the different gears in a machine: every piece turns to keep the system running smoothly.'
                                 }
                             />
 
@@ -109,59 +137,79 @@ function Recap() {
                                 <table className="min-w-full text-xs">
                                     <thead>
                                         <tr className="bg-gray-100">
-                                            <th className="px-4 py-2 text-left">Aspect</th>
-                                            <th className="px-4 py-2 text-left">
-                                                Help Desk (Traditional)
-                                            </th>
-                                            <th className="px-4 py-2 text-left">
-                                                Service Desk (ITIL)
-                                            </th>
+                                            <th className="px-4 py-2 text-left">Sub-Process</th>
+                                            <th className="px-4 py-2 text-left">Purpose</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td className="px-4 py-2 font-semibold">
-                                                Main Function
+                                                Proactive Problem Identification
                                             </td>
                                             <td className="px-4 py-2">
-                                                Solve daily technical issues
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                SPOC for incidents, requests, communication,
-                                                knowledge
+                                                Increase service availability by proactively
+                                                identifying Problems—finding issues before incidents
+                                                recur.
                                             </td>
                                         </tr>
                                         <tr className="bg-gray-50">
-                                            <td className="px-4 py-2 font-semibold">Orientation</td>
-                                            <td className="px-4 py-2">
-                                                Technical troubleshooting only
+                                            <td className="px-4 py-2 font-semibold">
+                                                Problem Categorization and Prioritization
                                             </td>
                                             <td className="px-4 py-2">
-                                                Business + Technical (aligned with SLAs)
+                                                Record and prioritize Problems accurately to ensure
+                                                quick and effective resolution.
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td className="px-4 py-2 font-semibold">Proactive?</td>
-                                            <td className="px-4 py-2">No, reactive only</td>
+                                            <td className="px-4 py-2 font-semibold">
+                                                Problem Diagnosis and Resolution
+                                            </td>
                                             <td className="px-4 py-2">
-                                                Yes, proactive notifications and trend management
+                                                Identify the root cause of a Problem and initiate
+                                                the most suitable and efficient solution. Provide a
+                                                temporary workaround if possible.
                                             </td>
                                         </tr>
                                         <tr className="bg-gray-50">
-                                            <td className="px-4 py-2 font-semibold">Added Value</td>
-                                            <td className="px-4 py-2">Short-term fixes</td>
+                                            <td className="px-4 py-2 font-semibold">
+                                                Problem and Error Control
+                                            </td>
                                             <td className="px-4 py-2">
-                                                Supports business strategy and user satisfaction
+                                                Monitor unresolved Problems and their processing
+                                                status to enable corrective action if needed.
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td className="px-4 py-2 font-semibold">Example</td>
-                                            <td className="px-4 py-2">
-                                                Small IT call center resetting passwords
+                                            <td className="px-4 py-2 font-semibold">
+                                                Problem Closure and Evaluation
                                             </td>
                                             <td className="px-4 py-2">
-                                                University Service Desk managing email issues,
-                                                software requests, SLA reporting
+                                                After a permanent solution is applied, ensure the
+                                                Problem Record contains a complete historical
+                                                description and update Known Error Records as
+                                                needed.
+                                            </td>
+                                        </tr>
+                                        <tr className="bg-gray-50">
+                                            <td className="px-4 py-2 font-semibold">
+                                                Major Problem Review
+                                            </td>
+                                            <td className="px-4 py-2">
+                                                Conduct a formal review of major Problem resolutions
+                                                to ensure the issue is fully addressed and generate
+                                                lessons learned to prevent recurrence.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="px-4 py-2 font-semibold">
+                                                Problem Management Reporting
+                                            </td>
+                                            <td className="px-4 py-2">
+                                                Provide Problem reports, including status, available
+                                                workarounds, and a list of outstanding problems to
+                                                other service management processes and IT
+                                                management.
                                             </td>
                                         </tr>
                                     </tbody>
@@ -172,155 +220,16 @@ function Recap() {
 
                     <Template>
                         <Section>
-                            <h1 className="font-semibold">Types of Service Desk</h1>
+                            <h1 className="font-semibold">Measuring Success with KPIs</h1>
                             <Paragraph
                                 text={
-                                    'When I explored this part of the assignment, I realized that Service Desks are not built in one universal way. They can take many forms depending on size, business model, ownership, customer orientation, and even how communication flows. Here’s what I learned in detail:'
-                                }
-                            />
-                            <Section>
-                                <h3 className="font-semibold text-sm mt-3">By Size & Location</h3>
-                                <ul className="list-disc pl-6 text-sm">
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Local Service Desk</strong> located physically close
-                                        to users (e.g., campus building or company branch), builds
-                                        strong personal interaction but can be costly if repeated
-                                        across many sites.
-                                    </li>
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Central Service Desk</strong> all requests are
-                                        funneled into one central location, allowing efficiency and
-                                        consistency for larger organizations, but must consider
-                                        challenges like language or time zones.
-                                    </li>
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Virtual Service Desk</strong> staff are spread
-                                        across locations but connected through technology, giving
-                                        the illusion of one unified desk; flexible, scalable, and
-                                        cost-efficient.
-                                    </li>
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Follow-the-Sun</strong> global teams hand over work
-                                        as time zones shift, creating 24/7 coverage; powerful but
-                                        complex to manage.
-                                    </li>
-                                </ul>
-
-                                <h3 className="font-semibold text-sm mt-3">By Business Model</h3>
-                                <ul className="list-disc pl-6 text-sm">
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Cost Center</strong> the Service Desk operates on a
-                                        budget and is treated as an expense. The challenge is
-                                        controlling hidden costs while still providing reliable
-                                        service.
-                                    </li>
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Profit Center</strong> the Service Desk generates
-                                        revenue by charging customers for services, often with a
-                                        defined service catalog and pricing. Common in IT
-                                        outsourcing companies.
-                                    </li>
-                                </ul>
-
-                                <h3 className="font-semibold text-sm mt-3">By Ownership</h3>
-                                <ul className="list-disc pl-6 text-sm">
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>In-house</strong> the organization runs its own
-                                        Service Desk, managed by internal staff. This gives control
-                                        but requires more effort in staffing and budgeting.
-                                    </li>
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Outsourced</strong> a third-party vendor provides
-                                        Service Desk services. This can lower costs and bring
-                                        expertise, but introduces risks like reduced control and
-                                        added complexity.
-                                    </li>
-                                </ul>
-
-                                <h3 className="font-semibold text-sm mt-3">
-                                    By Customer Orientation
-                                </h3>
-                                <ul className="list-disc pl-6 text-sm">
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Internal</strong> focused on serving the employees
-                                        of an organization (e.g., IT, HR, facilities, vehicle
-                                        management). Vital for ensuring productivity.
-                                    </li>
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>External</strong> aimed at supporting paying
-                                        customers who use the company’s products or services.
-                                        Directly shapes customer experience and brand reputation.
-                                    </li>
-                                </ul>
-
-                                <h3 className="font-semibold text-sm mt-3">
-                                    By Communication Flow
-                                </h3>
-                                <ul className="list-disc pl-6 text-sm">
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Inbound</strong> customers initiate contact (calls,
-                                        tickets, emails), and the desk responds. The most
-                                        traditional setup.
-                                    </li>
-                                    <li className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                        <strong>Outbound</strong> the Service Desk reaches out to
-                                        customers first, often for proactive updates, onboarding
-                                        guidance, or upselling opportunities. Turns the Service Desk
-                                        into a more active player in customer engagement.
-                                    </li>
-                                </ul>
-                            </Section>
-                        </Section>
-                    </Template>
-
-                    <Template>
-                        <Section>
-                            <h1 className="font-semibold">The Processes of Service Des</h1>
-                            <Paragraph
-                                text={
-                                    'Next, I walked through the sub-processes that make the Service Desk effective. What surprised me was how structured the workflow is:'
-                                }
-                            />
-
-                            <Image
-                                src="/itsm/week4-process.jpg"
-                                alt="process"
-                                height={4886}
-                                width={2940}
-                            ></Image>
-
-                            <Paragraph
-                                text={
-                                    'This was where the Service Desk came alive for me, in its processes. At first, I thought handling incidents was just “receive and solve.” But when I mapped the processes, I saw a choreography, almost like a dance where every step matters.'
+                                    'The next task made me think about how we measure success. With incidents, the KPI is usually speed, how fast did you respond, how fast did you close the ticket?'
                                 }
                             />
 
                             <Paragraph
                                 text={
-                                    'It begins with registering incidents. Every case is documented, even the small ones, because every record builds the knowledge that prevents future mistakes. Then there are service requests, which are not emergencies but standard needs — handled with predefined timelines so users know what to expect.'
-                                }
-                            />
-
-                            <Paragraph
-                                text={
-                                    'If the issue is simple, the Service Desk aims for immediate resolution, solving it at first contact. But when the problem is complex, it moves into analysis and resolution, sometimes escalating to Problem Management.'
-                                }
-                            />
-
-                            <Paragraph
-                                text={
-                                    'The Service Desk also monitors deadlines and escalates when risks appear, ensuring SLAs are not broken. At the same time, it proactively informs users, sending updates before they have to ask. When the issue is solved, the Service Desk does not just close the ticket; it evaluates the solution, making sure it really works for the user. Then the solution is stored in the knowledge base, where it becomes a reusable tool for the future. Finally, data is gathered into incident reports, giving leaders insights to improve.'
-                                }
-                            />
-                        </Section>
-                    </Template>
-
-                    <Template>
-                        <Section>
-                            <h1 className="font-semibold">KPIs of Service Desk</h1>
-                            <Paragraph
-                                text={
-                                    'In this part, I had to measure how success looks for the Service Desk. Numbers, I discovered, can tell powerful stories.'
+                                    'But with Problem Management, the story is different. It’s measured by how many problems were eliminated, how many root causes were identified, and whether repeat incidents declined. Even customer satisfaction became an important measure, because if problems are solved permanently, users begin to notice stability and reliability.'
                                 }
                             />
 
@@ -329,158 +238,141 @@ function Recap() {
                                     <thead>
                                         <tr className="bg-gray-100">
                                             <th className="px-4 py-2 text-left">KPI</th>
-                                            <th className="px-4 py-2 text-left">Definition</th>
-                                            <th className="px-4 py-2 text-left">Purpose</th>
+                                            <th className="px-4 py-2 text-left">Description</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td className="px-4 py-2 font-semibold">
-                                                Number of Repeated Incidents
+                                                Number of problems recorded
                                             </td>
                                             <td className="px-4 py-2">
-                                                Number of recurring incidents with a known
-                                                resolution method.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Measures effectiveness of Knowledge Management and
-                                                Problem Management.
+                                                Measures the number of problems identified in a
+                                                given period.
                                             </td>
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-4 py-2 font-semibold">
-                                                Incidents Resolved Remotely
+                                                Average resolution time
                                             </td>
                                             <td className="px-4 py-2">
-                                                Number of incidents resolved remotely by the Service
-                                                Desk (without visiting the user).
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Reduces cost & time, increases efficiency.
+                                                Average time taken to resolve problems.
                                             </td>
                                         </tr>
                                         <tr>
                                             <td className="px-4 py-2 font-semibold">
-                                                Number of Escalations
+                                                % of problems with identified root cause
                                             </td>
                                             <td className="px-4 py-2">
-                                                Number of incidents escalated due to not being
-                                                resolved within the agreed resolution time.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Measures first-level resolution quality & SLA
-                                                adherence.
+                                                Percentage of problems where the root cause was
+                                                successfully identified.
                                             </td>
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-4 py-2 font-semibold">
-                                                Number of Incidents
+                                                % of problems resolved with workaround
                                             </td>
                                             <td className="px-4 py-2">
-                                                Number of incidents registered by the Service Desk,
-                                                usually categorized by type.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Workload analysis & incident trend tracking.
+                                                Percentage of problems temporarily addressed with a
+                                                workaround.
                                             </td>
                                         </tr>
                                         <tr>
                                             <td className="px-4 py-2 font-semibold">
-                                                Average Initial Response Time
+                                                Number of repeat incidents
                                             </td>
                                             <td className="px-4 py-2">
-                                                Average time between incident report and first
-                                                response from Service Desk.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Measures speed of initial response & communication
-                                                quality.
+                                                Measures the effectiveness of problem management in
+                                                preventing recurring incidents.
                                             </td>
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-4 py-2 font-semibold">
-                                                Incident Resolution Time
+                                                Customer satisfaction
                                             </td>
                                             <td className="px-4 py-2">
-                                                Average time to resolve incidents (per category).
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Measures effectiveness in restoring normal service.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 font-semibold">
-                                                First Time Resolution Rate
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Percentage of incidents resolved at first contact by
-                                                the Service Desk.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Indicator of Service Desk efficiency & capability.
-                                            </td>
-                                        </tr>
-                                        <tr className="bg-gray-50">
-                                            <td className="px-4 py-2 font-semibold">
-                                                Resolution within SLA
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Percentage of incidents resolved within the agreed
-                                                SLA target time.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Ensures service quality & customer satisfaction.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 font-semibold">
-                                                Incident Resolution Effort
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Average work effort required to resolve incidents.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Measures Service Desk resource efficiency.
+                                                Level of user satisfaction regarding problem
+                                                resolution.
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <p className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                If the <strong>First Time Resolution Rate</strong> is high, it shows
-                                that the team is skilled and efficient. If the{' '}
-                                <strong>average response time</strong> is quick, it shows users are
-                                not left waiting in silence. If <strong>SLA compliance</strong> is
-                                consistent, it shows that commitments are being honored. But if
-                                there are too many <strong>repeated incidents</strong>, it shows the
-                                system is not learning. If there are too many{' '}
-                                <strong>escalations</strong>, it may mean Level 1 staff are
-                                undertrained.
-                            </p>
-                            <p className="anim text-background/70 hover:text-background text-xs md:text-sm w-fit text-justify">
-                                Looking at these KPIs, I realized they are not just metrics for
-                                managers. They are mirrors of user experience. Each number is a
-                                reflection of how people feel about the Service Desk: ignored,
-                                frustrated, reassured, or impressed.
-                            </p>
+                            <Paragraph
+                                text={
+                                    'To me, these KPIs told a bigger story: success here is not about racing to the finish line, but about making sure the race track itself is safe for the future.'
+                                }
+                            />
                         </Section>
                     </Template>
 
                     <Template>
                         <Section>
-                            <h1 className="font-semibold">Incident Management vs. Service Desk</h1>
+                            <h1 className="font-semibold">Known Error Database (KEDB)</h1>
                             <Paragraph
                                 text={
-                                    'This task cleared up a confusion I had. At first, I used “incident management” and “service desk” as if they were the same thing. But they are not.'
+                                    'This was my “aha” moment of the week. The KEDB is like a memory bank for IT. It stores every known problem and its workaround so that the next time it appears, no one has to start from scratch.'
                                 }
                             />
 
                             <Paragraph
                                 text={
-                                    'Incident Management is a process. It is the structured set of steps designed to restore service as fast as possible. Service Desk is a function. It is the team that carries out the steps, communicates with users, and makes sure the process feels human.'
+                                    'The KEDB was one of the most fascinating discoveries this week. It works like the organization’s memory bank, a repository where every identified problem, its root cause, and its workaround are stored. Instead of starting from scratch every time a repeated incident occurs, Service Desk agents can check the KEDB and instantly apply a solution.'
                                 }
                             />
+
+                            <Paragraph
+                                text={
+                                    'For example, we discussed a case where a bug in an HR application caused login failures when users opened it on older browsers. The root cause had already been identified, and the workaround was simple: advise users to switch to the latest browser version. Once this information was recorded in the KEDB, the Service Desk could respond in seconds instead of wasting time reanalyzing the same bug.'
+                                }
+                            />
+
+                            <Paragraph text={'This is a KEDB that I created on the Lab Session'} />
+
+                            <Image
+                                src="/itsm/week5-kedb.png"
+                                alt="kedb"
+                                height={1172}
+                                width={538}
+                            ></Image>
+                        </Section>
+                    </Template>
+
+                    <Template>
+                        <Section>
+                            <h1 className="font-semibold">Workarounds as Survival Tools</h1>
+                            <Paragraph
+                                text={
+                                    'One of the most important lessons I picked up this week was the role of workarounds. At first, I thought of them as “half-baked fixes,” something you do when you can’t solve the problem properly. But the more I studied, the more I realized that workarounds are actually survival tools. They buy time, reduce impact, and keep users productive while IT works on a permanent solution.'
+                                }
+                            />
+
+                            <Paragraph
+                                text={
+                                    'Take the example of the HR application bug that caused login failures on outdated browsers. The permanent fix required patching the application, which would take time. But the workaround, advising users to update to the latest browser, gave employees immediate access to the system. It didn’t remove the bug, but it restored productivity almost instantly.'
+                                }
+                            />
+
+                            <Paragraph
+                                text={
+                                    'In my group’s lab exercise, I saw this play out again with the VPN router connectivity problem. The root causes included firmware incompatibility and lack of redundancy. A permanent solution meant rolling back firmware versions and redesigning the network. But in the meantime, the workaround was to manually restart the router and redirect traffic through alternative access points. It wasn’t elegant, but it kept critical healthcare services like Telemedicine and EMR online.'
+                                }
+                            />
+
+                            <Paragraph
+                                text={
+                                    'These stories helped me see that workarounds are not failures, they are acts of resilience. They prove that in ITSM, success is not always about perfection, but about flexibility and pragmatism. A good workaround can make the difference between an organization grinding to a halt and one that keeps moving while engineers quietly prepare the permanent cure.'
+                                }
+                            />
+                        </Section>
+                    </Template>
+
+                    <Template>
+                        <Section>
+                            <h1 className="font-semibold">
+                                The Link Between Incident and Problem Management
+                            </h1>
 
                             <div className="overflow-x-auto my-6">
                                 <table className="min-w-full text-xs">
@@ -490,62 +382,56 @@ function Recap() {
                                             <th className="px-4 py-2 text-left">
                                                 Incident Management
                                             </th>
-                                            <th className="px-4 py-2 text-left">Service Desk</th>
+                                            <th className="px-4 py-2 text-left">
+                                                Problem Management
+                                            </th>
+                                            <th className="px-4 py-2 text-left">Relationship</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td className="px-4 py-2 font-semibold">Definition</td>
-                                            <td className="px-4 py-2">
-                                                Process in ITIL for managing incidents.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Function/Team that acts as SPOC with users.
-                                            </td>
-                                        </tr>
-                                        <tr className="bg-gray-50">
                                             <td className="px-4 py-2 font-semibold">Focus</td>
                                             <td className="px-4 py-2">
-                                                Restore normal service as quickly as possible.
+                                                Restoring services as quickly as possible.
                                             </td>
                                             <td className="px-4 py-2">
-                                                Handles communication, logging, resolution,
-                                                escalation.
+                                                Finding the root cause of incidents to prevent
+                                                recurrence.
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 font-semibold">Output</td>
-                                            <td className="px-4 py-2">
-                                                SLA compliance, incident reports, solutions.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                User experience, ticket data, communication.
+                                            <td className="px-4 py-2" rowSpan={2}>
+                                                Frequent incidents can trigger problem management
+                                                analysis.
+                                                <br />
+                                                Results from problem management (such as workarounds
+                                                or KEDB) are used by incident management to speed up
+                                                service restoration.
                                             </td>
                                         </tr>
                                         <tr className="bg-gray-50">
-                                            <td className="px-4 py-2 font-semibold">Scope</td>
+                                            <td className="px-4 py-2 font-semibold">Role</td>
                                             <td className="px-4 py-2">
-                                                Part of ITIL Service Operation (v3) or Practice
-                                                (v4).
+                                                Process for restoring service fast.
                                             </td>
                                             <td className="px-4 py-2">
-                                                One of the key functions in ITSM.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 font-semibold">Example</td>
-                                            <td className="px-4 py-2">
-                                                Procedure for handling &quot;email server down&quot;
-                                                → restore in 2 hours.
-                                            </td>
-                                            <td className="px-4 py-2">
-                                                Service Desk agent receives report, gives status
-                                                updates, closes ticket after fix.
+                                                Process for eliminating causes and preventing future
+                                                incidents.
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+
+                            <Paragraph
+                                text={
+                                    'At first, I thought Incident Management and Problem Management were two names for the same thing. But this week made me realize they are different roles in the same story. Incident Management is about speed: when a system goes down, the priority is to restore service as quickly as possible so users can keep working. Problem Management takes over afterward, asking why the failure happened and how to stop it from happening again. Together, they form a cycle, one solves the immediate pain, the other works to remove the cause.'
+                                }
+                            />
+
+                            <Paragraph
+                                text={
+                                    'Incident Management is a process. It is the structured set of steps designed to restore service as fast as possible. Service Desk is a function. It is the team that carries out the steps, communicates with users, and makes sure the process feels human.'
+                                }
+                            />
                         </Section>
                     </Template>
 
@@ -555,13 +441,19 @@ function Recap() {
                         <h1 className="font-semibold">Reflection</h1>
                         <Paragraph
                             text={
-                                'This week, the Service Desk went from being a vague concept to being something I could picture in detail, its roles, its types, its processes, its measures, and even its failures. I saw it as both a human role and a structured system. The assignment made me realize that while users see only a phone number or email address, behind it lies a carefully designed function that balances empathy with discipline.'
+                                'Week 5 was the week ITSM began to feel like detective work. Incidents taught me to act fast, but Problem Management taught me to slow down, look deeper, and think long term. I learned that resilience isn’t just about restoring service, but about ensuring the same issue doesn’t haunt users again and again.'
                             }
                         />
 
                         <Paragraph
                             text={
-                                'I walked away convinced that the Service Desk is both the human face and the memory keeper of ITSM. It listens, it responds, it learns, and it improves. Without it, IT would feel distant and unreliable. With it, IT becomes approachable, dependable, and trusted.'
+                                'The lab especially left an impression on me. Cleaning messy data taught me discipline. Identifying patterns taught me focus. Building the Fishbone Diagram showed me how problems are systemic, not isolated. And writing the KEDB entry showed me how lessons, once captured, become assets for the future.'
+                            }
+                        />
+
+                        <Paragraph
+                            text={
+                                'By the end of the week, I began to see Problem Management not just as a process, but as a mindset: always ask why, always look deeper, and always turn pain into learning.'
                             }
                         />
                     </Template>

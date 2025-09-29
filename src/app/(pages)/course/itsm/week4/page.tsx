@@ -275,7 +275,7 @@ function Recap() {
 
                     <Template>
                         <Section>
-                            <h1 className="font-semibold">The Processes of Service Des</h1>
+                            <h1 className="font-semibold">The Processes of Service Desk</h1>
                             <Paragraph
                                 text={
                                     'Next, I walked through the sub-processes that make the Service Desk effective. What surprised me was how structured the workflow is:'
