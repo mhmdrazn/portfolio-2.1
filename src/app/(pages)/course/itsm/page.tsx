@@ -33,22 +33,40 @@ const blog = [
         href: '/course/itsm/week3',
         image: '/itsm/week3-itsm.jpg',
     },
+    {
+        title: 'Week 4 – Service Desk and Incident Management',
+        description:
+            'In Week 3, we moved deeper into the Service Value System (SVS), one of the central models in ITIL 4.',
+        href: '/course/itsm/week4',
+        image: '/itsm/week4-itsm.jpg',
+    },
+    {
+        title: 'Week 5 – Service Value System and ITIL Management Practices',
+        description:
+            'In Week 3, we moved deeper into the Service Value System (SVS), one of the central models in ITIL 4.',
+        href: '/course/itsm/week5',
+        image: '/itsm/week5-itsm.jpg',
+    },
 ];
 
 const docs = [
     {
         href: '/itsm/5026231174_Week1.pdf',
-        title: '📄 Week 1 Homework (PDF)'
+        title: '📄 Week 1 Homework (PDF)',
     },
     {
         href: '/itsm/5026231174_Week2.pdf',
-        title: '📄 Week 2 Class Assignment (PDF)'
-    }, 
+        title: '📄 Week 2 Class Assignment (PDF)',
+    },
     {
         href: '/itsm/5026231174_Week3.pdf',
-        title: '📄 Week 3 Class Assignment (PDF)'
-    }, 
-]
+        title: '📄 Week 3 Class Assignment (PDF)',
+    },
+    {
+        href: '/itsm/5026231174_Week4.pdf',
+        title: '📄 Week 4 Class Assignment (PDF)',
+    },
+];
 
 function Page() {
     return (
@@ -99,7 +117,7 @@ function Page() {
                                         alt={index.title}
                                         width={210}
                                         height={70}
-                                        className="w-2/5 h-24 md:w-1/3 object-cover group-hover:scale-110 anim"
+                                        className="w-full h-24 md:w-1/3 object-cover group-hover:scale-110 anim"
                                         style={{
                                             maskImage:
                                                 'linear-gradient(to right, transparent 0%, #000 70%)',
@@ -118,11 +136,7 @@ function Page() {
                     <div className="flex flex-col w-full gap-2">
                         {docs.map((index, key) => (
                             <Button variant={'outline'} className="w-full" key={key}>
-                                <a
-                                    href={index.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
+                                <a href={index.href} target="_blank" rel="noopener noreferrer">
                                     {index.title}
                                 </a>
                             </Button>
