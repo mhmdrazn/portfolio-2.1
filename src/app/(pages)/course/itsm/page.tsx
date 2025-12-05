@@ -204,7 +204,7 @@ const docs = [
         date: '17 November 2025',
         items: [
             {
-                href: '/itsm/5026231174_week11.pdf',
+                href: '/itsm/5026231174_Week11.pdf',
                 title: '📄 Week 11 Class Activity',
             },
         ],
