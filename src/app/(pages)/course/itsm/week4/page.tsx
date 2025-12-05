@@ -65,7 +65,7 @@ function Recap() {
 
                             <Button variant={'outline'} className="w-full mt-2">
                                 <a
-                                    href="/itsm/5026231174_Week4_Group.pdf"
+                                    href="/itsm/Week4_Lab1.xlsx"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

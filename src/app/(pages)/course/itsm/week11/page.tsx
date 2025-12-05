@@ -55,7 +55,7 @@ function Week11() {
                         <div className="w-full">
                             <Button variant={'outline'} className="w-full">
                                 <a
-                                    href="/itsm/5026231174_week11.pdf"
+                                    href="/itsm/5026231174_Week11.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
