@@ -104,6 +104,13 @@ const blog = [
         href: '/course/itsm/week14',
         image: '/itsm/week14-itsm.jpg',
     },
+    {
+        title: 'Week 15 - Final Project (Part 1): Incident, Problem, and Change Management',
+        description:
+            'When ITSM Becomes Real. Applied Incident, Problem, and Change Management together to restore stability to a healthcare EHR system in a full ITSM project.',
+        href: '/course/itsm/week15',
+        image: '/itsm/week15-itsm.jpg',
+    },
 ];
 
 const docs = [
@@ -221,11 +228,21 @@ const docs = [
     },
     {
         week: 'Week 14',
-        date: 'December 2025',
+        date: '24 November 2025',
         items: [
             {
                 href: '/itsm/5026231174_Week14.pdf',
                 title: '📄 Week 14 Class Activity',
+            },
+        ],
+    },
+    {
+        week: 'Week 15',
+        date: '2 December 2025',
+        items: [
+            {
+                href: '/itsm/5026231174_Week15.pdf',
+                title: '📄 Week 15 Final Project Part 1',
             },
         ],
     },
