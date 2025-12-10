@@ -111,6 +111,13 @@ const blog = [
         href: '/course/itsm/week15',
         image: '/itsm/week15-itsm.jpg',
     },
+    {
+        title: 'Week 16 - Final Project (Part 2): Knowledge Management',
+        description:
+            'From Reactive Fixes to Proactive Intelligence. Converted major operational disruptions into structured corporate memory with Knowledge Base articles and A-grade integrations.',
+        href: '/course/itsm/week16',
+        image: '/itsm/week16-itsm.jpg',
+    },
 ];
 
 const docs = [
@@ -241,8 +248,18 @@ const docs = [
         date: '2 December 2025',
         items: [
             {
-                href: '/itsm/5026231174_Week15.pdf',
+                href: '/itsm/Group11_Final Project (Part 1).pdf',
                 title: '📄 Week 15 Final Project Part 1',
+            },
+        ],
+    },
+    {
+        week: 'Week 16',
+        date: '9 December 2025',
+        items: [
+            {
+                href: '/itsm/Group11_Final Project (Part 2).pdf',
+                title: '📄 Week 16 Final Project Part 2',
             },
         ],
     },
