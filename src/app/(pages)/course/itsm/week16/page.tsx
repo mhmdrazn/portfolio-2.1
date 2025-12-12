@@ -58,7 +58,7 @@ function Week16() {
 
                         <div className="w-full">
                             <Button variant={'outline'} className="w-full">
-                                <a href="/itsm/Group11_Final Project (Part 2).pdf" target="_blank" rel="noopener noreferrer">
+                                <a href="/itsm/Group 11_Final Project MLTI Part 2.pdf" target="_blank" rel="noopener noreferrer">
                                     📄 Week 16 Final Project Part 2
                                 </a>
                             </Button>

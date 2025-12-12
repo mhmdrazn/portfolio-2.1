@@ -258,7 +258,7 @@ const docs = [
         date: '9 December 2025',
         items: [
             {
-                href: '/itsm/Group11_Final Project (Part 2).pdf',
+                href: '/itsm/Group 11_Final Project MLTI Part 2.pdf',
                 title: '📄 Week 16 Final Project Part 2',
             },
         ],
